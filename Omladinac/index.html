@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NK Omladinac Čaglin</title>
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- CSS Loading Animation -->
+    <div id="loader" class="loader-container">
+        <div class="loader-logo">
+            <img src="images/omladinac.jpg" alt="NK Omladinac Čaglin" width="80" height="80"
+                style="border-radius: 50%;">
+        </div>
+        <div class="loader-text">Omladinac Čaglin</div>
+    </div>
+
+    <!-- N A V I G A C I J A -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo-link" aria-label="Početna strana">
+                <img src="images/omladinac.jpg" alt="NK Omladinac Čaglin" width="40" height="40" class="logo-img">
+                <div class="logo-text">NK OMLADINAC ČAGLIN</div>
+            </a>
+
+            <button class="hamburger-btn" aria-label="Otvori navigaciju" aria-expanded="false"
+                aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#o-klubu">O Klubu</a>
+                <a href="#sezona">Sezona</a>
+                <a href="#momcad">Momčad</a>
+                <a href="#raspored">Raspored</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- H E R O  S E K C I J A -->
+        <section class="hero" id="top">
+            <!-- Alternativa za placeholder fotografije - CSS uzorak -->
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+                <h1 class="hero-title">SRCE ČAGLINA.<br>DUŠA SLAVONIJE.</h1>
+                <p class="hero-subtitle">NK Omladinac Čaglin — 2. ŽNL Požeško-slavonska</p>
+                <div class="hero-buttons">
+                    <a href="#sezona" class="btn btn-outline">Naša Sezona &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Bouncing arrow scroll indicator -->
+            <a href="#o-klubu" class="scroll-indicator" aria-label="Prijeđi na sljedeću sekciju">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+                </svg>
+            </a>
+        </section>
+
+        <!-- O K L U B U -->
+        <section class="section about" id="o-klubu">
+            <div class="container about-grid">
+                <div class="about-text scroll-animate">
+                    <h2 class="section-title">Ponosi Svog Kraja</h2>
+                    <p>NK Omladinac Čaglin ponos je svoje zajednice i srce sportskog života općine Čaglin. Klub se
+                        natječe u 1. Županijskoj nogometnoj ligi Požeško-slavonske županije, a svoje utakmice igra na
+                        stadionu u Kolodvorskoj ulici u Čaglinu.</p>
+                    <p>Smješteni u idiličnom krajoliku zapadne Slavonije, između obronaka Dilj Gore i Krndije, naši
+                        igrači i navijači dijele zajedničku ljubav prema lijepoj igri i svom rodnom kraju. Svake subote,
+                        na travnjaku u Kolodvorskoj, brane se boje Čaglina.</p>
+                    <p class="about-placeholder-text">[PLACEHOLDER — Klub je osnovan 1968. godine. Trenutni predsjednik:
+                        Ivan Horvat.]</p>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-card scroll-animate item-1">
+                        <div class="stat-icon">⚽</div>
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Sezona u 1. ŽNL</div>
+                    </div>
+                    <div class="stat-card scroll-animate item-2">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-number" data-target="120">0</div>
+                        <div class="stat-label">Registriranih igrača</div>
+                    </div>
+                    <div class="stat-card scroll-animate item-3">
+                        <div class="stat-icon">🏆</div>
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Naslova prvaka</div>
+                    </div>
+                    <div class="stat-card scroll-animate item-4">
+                        <div class="stat-icon">📍</div>
+                        <div class="stat-number text-stat">Čaglin</div>
+                        <div class="stat-label">Naš dom</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- T R E N U T N A  S E Z O N A -->
+        <section class="section season" id="sezona">
+            <div class="container">
+                <h2 class="section-title center-title scroll-animate">Trenutna Sezona 2024/25</h2>
+
+                <div class="season-panels">
+                    <!-- Tablica -->
+                    <div class="panel table-panel scroll-animate">
+                        <h3 class="panel-title">2. ŽNL Požeško-slavonska</h3>
+                        <div class="table-responsive">
+                            <table class="league-table">
+                                <thead>
+                                    <tr>
+                                        <th>Poz</th>
+                                        <th>Klub</th>
+                                        <th>Ut</th>
+                                        <th>Pob</th>
+                                        <th>Ner</th>
+                                        <th>Por</th>
+                                        <th>G+</th>
+                                        <th>G-</th>
+                                        <th>GR</th>
+                                        <th>Bod</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1.</td>
+                                        <td>NK Eminovci</td>
+                                        <td>12</td>
+                                        <td>11</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>50</td>
+                                        <td>9</td>
+                                        <td>+41</td>
+                                        <td>34</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td>NK Parasan</td>
+                                        <td>12</td>
+                                        <td>10</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>49</td>
+                                        <td>6</td>
+                                        <td>+43</td>
+                                        <td>31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3.</td>
+                                        <td>HNK Dobrovac</td>
+                                        <td>12</td>
+                                        <td>9</td>
+                                        <td>0</td>
+                                        <td>3</td>
+                                        <td>31</td>
+                                        <td>14</td>
+                                        <td>+17</td>
+                                        <td>27</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4.</td>
+                                        <td>NK Graničar Bučje</td>
+                                        <td>12</td>
+                                        <td>6</td>
+                                        <td>3</td>
+                                        <td>3</td>
+                                        <td>31</td>
+                                        <td>20</td>
+                                        <td>+11</td>
+                                        <td>21</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>5.</td>
+                                        <td><b>NK Omladinac Čaglin</b></td>
+                                        <td>12</td>
+                                        <td>5</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>17</td>
+                                        <td>13</td>
+                                        <td>+4</td>
+                                        <td>18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6.</td>
+                                        <td>NK Sulkovci</td>
+                                        <td>12</td>
+                                        <td>5</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                        <td>24</td>
+                                        <td>24</td>
+                                        <td>0</td>
+                                        <td>17</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7.</td>
+                                        <td>NK Croatia D. Obrijež</td>
+                                        <td>12</td>
+                                        <td>4</td>
+                                        <td>1</td>
+                                        <td>7</td>
+                                        <td>19</td>
+                                        <td>35</td>
+                                        <td>-16</td>
+                                        <td>13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8.</td>
+                                        <td>NK BSK Biškupci</td>
+                                        <td>11</td>
+                                        <td>3</td>
+                                        <td>1</td>
+                                        <td>7</td>
+                                        <td>15</td>
+                                        <td>28</td>
+                                        <td>-13</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9.</td>
+                                        <td>NK Dinamo Badljevina</td>
+                                        <td>12</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>9</td>
+                                        <td>24</td>
+                                        <td>52</td>
+                                        <td>-28</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10.</td>
+                                        <td>NK Slavonija Prekopakra</td>
+                                        <td>11</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>8</td>
+                                        <td>15</td>
+                                        <td>42</td>
+                                        <td>-27</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11.</td>
+                                        <td>NK Ovčare</td>
+                                        <td>12</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>10</td>
+                                        <td>13</td>
+                                        <td>45</td>
+                                        <td>-32</td>
+                                        <td>4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="https://hns-cff.hr" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline table-cta">Pogledaj detaljnu tablicu na HNS Semaforu &rarr;</a>
+                    </div>
+
+                    <!-- Zadnji rezultati -->
+                    <div class="panel results-panel scroll-animate delay-1">
+                        <h3 class="panel-title">Zadnji Rezultati</h3>
+
+                        <div class="match-card result-loss">
+                            <div class="match-date">22. Ožu 2026. | 2. ŽNL (13. kolo)</div>
+                            <div class="match-teams">
+                                <span class="team">NK Parasan</span>
+                                <span class="score loss-score">3 : 0</span>
+                                <span class="team text-right">NK Omladinac Čaglin</span>
+                            </div>
+                        </div>
+
+                        <div class="match-card result-loss">
+                            <div class="match-date">15. Ožu 2026. | 2. ŽNL (12. kolo)</div>
+                            <div class="match-teams">
+                                <span class="team">NK Omladinac Čaglin</span>
+                                <span class="score loss-score">0 : 1</span>
+                                <span class="team text-right">HNK Dobrovac</span>
+                            </div>
+                        </div>
+
+                        <div class="match-card result-win">
+                            <div class="match-date">09. Stu 2025. | 2. ŽNL (11. kolo)</div>
+                            <div class="match-teams">
+                                <span class="team">NK Omladinac Čaglin</span>
+                                <span class="score win-score">4 : 1</span>
+                                <span class="team text-right">NK BSK Biškupci</span>
+                            </div>
+                        </div>
+
+                        <div class="match-card result-draw">
+                            <div class="match-date">19. Lis 2025. | 2. ŽNL (9. kolo)</div>
+                            <div class="match-teams">
+                                <span class="team">NK Croatia D. Obrijež</span>
+                                <span class="score draw-score">1 : 1</span>
+                                <span class="team text-right">NK Omladinac Čaglin</span>
+                            </div>
+                        </div>
+
+                        <div class="match-card result-win">
+                            <div class="match-date">12. Lis 2025. | 2. ŽNL (8. kolo)</div>
+                            <div class="match-teams">
+                                <span class="team">NK Omladinac Čaglin</span>
+                                <span class="score win-score">3 : 0</span>
+                                <span class="team text-right">NK Ovčare</span>
+                            </div>
+                        </div>
+
+                        <a href="https://semafor.hns.family/klubovi/660/nk-omladinac-caglin/" target="_blank"
+                            class="btn btn-outline" style="width: 100%; text-align: center; margin-top:1rem;">Sve
+                            utakmice →</a>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- M O M Č A D -->
+        <section class="section team" id="momcad">
+            <div class="container">
+                <h2 class="section-title center-title scroll-animate">Naši Ratnici</h2>
+
+                <div class="team-filters scroll-animate">
+                    <button class="filter-btn active" data-filter="all">Svi</button>
+                    <button class="filter-btn" data-filter="golmani">Vratari</button>
+                    <button class="filter-btn" data-filter="obranbeni">Braniči</button>
+                    <button class="filter-btn" data-filter="vezni">Veznjaci</button>
+                    <button class="filter-btn" data-filter="napadaci">Napadači</button>
+                </div>
+
+                <div class="team-grid" id="team-grid">
+                    <!-- Dinamično generirano preko JS-a da se popuni placeholderima -->
+                </div>
+            </div>
+        </section>
+
+        <!-- R A S P O R E D  U T A K M I C A -->
+        <section class="section schedule" id="raspored">
+            <div class="container">
+                <h2 class="section-title center-title scroll-animate">Nadolazeće Utakmice</h2>
+
+                <!-- Sljedeća utakmica — istaknuta kartica -->
+                <div class="next-match-card scroll-animate">
+                    <div class="next-match-label">Sljedeća Utakmica — 14. kolo</div>
+                    <div class="next-match-teams">
+                        <div class="next-match-team">
+                            <img src="images/omladinac.jpg" alt="NK Omladinac Čaglin" class="next-match-crest">
+                            <span>NK Omladinac Čaglin</span>
+                        </div>
+                        <div class="next-match-vs">VS</div>
+                        <div class="next-match-team">
+                            <div class="next-match-crest-placeholder">⚽</div>
+                            <span>NK Eminovci</span>
+                        </div>
+                    </div>
+                    <div class="next-match-info">
+                        <div class="next-match-datetime">📅 29.03.2026. — 16:00</div>
+                        <div class="next-match-venue">📍 Stadion NK Omladinac, Kolodvorska ul., Čaglin</div>
+                        <span class="match-tag tag-home">Domaća</span>
+                    </div>
+                    <div class="countdown" id="countdown">
+                        <div class="countdown-unit">
+                            <span class="countdown-num" id="cd-days">--</span>
+                            <span class="countdown-label">Dana</span>
+                        </div>
+                        <div class="countdown-sep">:</div>
+                        <div class="countdown-unit">
+                            <span class="countdown-num" id="cd-hours">--</span>
+                            <span class="countdown-label">Sati</span>
+                        </div>
+                        <div class="countdown-sep">:</div>
+                        <div class="countdown-unit">
+                            <span class="countdown-num" id="cd-mins">--</span>
+                            <span class="countdown-label">Min</span>
+                        </div>
+                        <div class="countdown-sep">:</div>
+                        <div class="countdown-unit">
+                            <span class="countdown-num" id="cd-secs">--</span>
+                            <span class="countdown-label">Sek</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ostale nadolazeće utakmice -->
+                <div class="timeline scroll-animate delay-1">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="match-time">15. kolo — 06.04.2026. — 16:30</div>
+                            <div class="match-teams-title">NK Graničar Bučje <span class="vs">vs</span> NK Omladinac
+                                Čaglin</div>
+                            <div class="match-location">📍 Stadion NK Graničar, Bučje</div>
+                            <span class="match-tag tag-away">Gostujuća</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="match-time">16. kolo — 12.04.2026. — 17:00</div>
+                            <div class="match-teams-title">NK Omladinac Čaglin <span class="vs">vs</span> NK Dinamo
+                                Badljevina</div>
+                            <div class="match-location">📍 Stadion NK Omladinac, Kolodvorska ul., Čaglin</div>
+                            <span class="match-tag tag-home">Domaća</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="match-time">17. kolo — 18.04.2026. — 17:00</div>
+                            <div class="match-teams-title">NK Slavonija Prekopakra <span class="vs">vs</span> NK
+                                Omladinac Čaglin</div>
+                            <div class="match-location">📍 Stadion NK Slavonija, Prekopakra</div>
+                            <span class="match-tag tag-away">Gostujuća</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="match-time">18. kolo — 26.04.2026. — 17:00</div>
+                            <div class="match-teams-title">NK Omladinac Čaglin <span class="vs">vs</span> NK Sulkovci
+                            </div>
+                            <div class="match-location">📍 Stadion NK Omladinac, Kolodvorska ul., Čaglin</div>
+                            <span class="match-tag tag-home">Domaća</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- G A L E R I J A -->
+        <section class="section gallery" id="galerija">
+            <div class="container">
+                <h2 class="section-title center-title scroll-animate">Galerija</h2>
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- JS generirani placeholdera slika -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <div class="lightbox-content">
+                <div class="lightbox-placeholder">
+                    <span>Pregled Slike</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- K O N T A K T -->
+        <section class="section contact" id="kontakt">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-col scroll-animate">
+                        <h2 class="section-title">Stupite u Kontakt</h2>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ime i Prezime</label>
+                                <input type="text" id="name" placeholder="Vaše ime" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail adresa</label>
+                                <input type="email" id="email" placeholder="vaš@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Tema poruke</label>
+                                <select id="subject" required>
+                                    <option value="" disabled selected>Odaberite temu...</option>
+                                    <option value="upis">Upis u klub</option>
+                                    <option value="sponzorstvo">Sponzorstvo</option>
+                                    <option value="informacije">Informacije</option>
+                                    <option value="ostalo">Ostalo</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Poruka</label>
+                                <textarea id="message" rows="5" placeholder="Napišite svoju poruku ovdje..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Pošalji poruku</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-col scroll-animate delay-1">
+                        <div class="info-card">
+                            <h3>Informacije</h3>
+                            <ul>
+                                <li>
+                                    <span class="info-icon">📍</span>
+                                    <span>Stadion NK Omladinac<br>Kolodvorska ulica, 34350 Čaglin<br>Požeško-slavonska
+                                        županija</span>
+                                </li>
+                                <li>
+                                    <span class="info-icon">📞</span>
+                                    <span>[PLACEHOLDER - 09X XXX XXXX]</span>
+                                </li>
+                                <li>
+                                    <span class="info-icon">✉️</span>
+                                    <span>[PLACEHOLDER - info@nkomladinac-caglin.hr]</span>
+                                </li>
+                            </ul>
+
+                            <div class="social-links">
+                                <p>Pratite nas:</p>
+                                <a href="#" aria-label="Facebook">FB</a>
+                                <a href="#" aria-label="Instagram">IG</a>
+                                <a href="#" aria-label="YouTube">YT</a>
+                            </div>
+                        </div>
+
+                        <div class="map-container">
+                            <!-- Lat/Lng: 45.3158, 17.9903 -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11234.331289139363!2d17.9803!3d45.3158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475ce30616b7617b%3A0x6bba3bf9de71f652!2s%C4%8Caglin!5e0!3m2!1sen!2shr!4v1700000000000!5m2!1sen!2shr"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Karta Čaglina">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- F O O T E R -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="images/omladinac.jpg" alt="NK Omladinac Čaglin" width="50" height="50"
+                    style="border-radius: 50%;">
+                <div class="footer-title">NK Omladinac Čaglin</div>
+                <p>Čaglin, Požeško-slavonska županija<br>Hrvatska</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>Brze poveznice</h4>
+                    <ul>
+                        <li><a href="#o-klubu">O Klubu</a></li>
+                        <li><a href="#momcad">Momčad</a></li>
+                        <li><a href="#raspored">Raspored</a></li>
+
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Pratite nas</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2025 NK Omladinac Čaglin | Sva prava pridržana.</p>
+            <p>Član Nogometnog saveza Požeško-slavonske županije.</p>
+            <p class="designer">[Izradio: Umjetna Inteligencija]</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

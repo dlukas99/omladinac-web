@@ -1,0 +1,1402 @@
+:root {
+    --col-primary: #0a1e3d;
+    --col-primary-dark: #020510;
+    --col-accent: #3b82f6;
+    --col-accent-hover: #60a5fa;
+    --col-text: #ffffff;
+    --col-text-muted: #94a3b8;
+    --col-bg: #010308;
+
+    /* Premium Glassmorphism Variables */
+    --col-surface: rgba(10, 30, 61, 0.25);
+    --col-surface-hover: rgba(10, 30, 61, 0.45);
+    --col-surface-border: rgba(255, 255, 255, 0.08);
+    --col-glass-light: rgba(255, 255, 255, 0.03);
+    --backdrop-blur: blur(12px);
+
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.5);
+    --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    --shadow-gold: 0 0 20px rgba(59, 130, 246, 0.4);
+    --shadow-glow: 0 0 15px rgba(10, 30, 61, 0.6);
+
+    --transition-fast: 0.3s ease;
+    --transition-medium: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   OSNOVNI STILOVI (RESET)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--col-bg);
+    color: var(--col-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+.bebas {
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+a {
+    color: var(--col-accent);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--col-accent-hover);
+}
+
+ul {
+    list-style: none;
+}
+
+img,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: var(--space-xl) 0;
+}
+
+.section-title {
+    font-size: 3rem;
+    color: var(--col-accent);
+    margin-bottom: var(--space-md);
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50%;
+    height: 4px;
+    background-color: var(--col-text);
+}
+
+.center-title {
+    text-align: center;
+    display: block;
+}
+
+.center-title::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+}
+
+/* ==========================================================================
+   LOADING ANIMACIJA
+   ========================================================================== */
+.loader-container {
+    position: fixed;
+    inset: 0;
+    background-color: var(--col-primary-dark);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loader-logo {
+    animation: pulse 1.5s infinite alternate;
+}
+
+.loader-text {
+    font-family: var(--font-heading);
+    color: var(--col-accent);
+    font-size: 2rem;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.8;
+        filter: drop-shadow(0 0 10px var(--col-accent));
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 1;
+        filter: drop-shadow(0 0 20px var(--col-accent));
+    }
+}
+
+/* ==========================================================================
+   GUMBI (BUTTONS)
+   ========================================================================== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 2rem;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: var(--col-accent);
+    color: var(--col-primary-dark);
+}
+
+.btn-primary:hover {
+    background-color: var(--col-accent-hover);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-gold);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--col-text);
+    color: var(--col-text);
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--col-accent);
+    color: var(--col-accent);
+    transform: translateY(-3px);
+}
+
+/* ==========================================================================
+   NAVIGACIJA
+   ========================================================================== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: var(--col-surface-hover);
+    backdrop-filter: var(--backdrop-blur);
+    border-bottom: 1px solid var(--col-surface-border);
+    padding: 0.5rem 0;
+    box-shadow: var(--shadow-glass);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--col-accent);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--col-text);
+    font-weight: 500;
+    font-size: 0.95rem;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--col-accent);
+    transition: width var(--transition-fast);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+
+
+.hamburger-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.hamburger-btn span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--col-accent);
+    margin: 6px 0;
+    transition: 0.3s;
+}
+
+/* ==========================================================================
+   HERO SEKCIJA
+   ========================================================================== */
+.hero {
+    height: 100vh;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 30%, var(--col-primary) 0%, var(--col-primary-dark) 80%);
+    background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.02) 0, rgba(255, 255, 255, 0.02) 1px, transparent 1px, transparent 10px);
+    background-color: var(--col-primary-dark);
+    z-index: 1;
+    transform: scale(1.1);
+    /* Za paralaksu */
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(2, 11, 5, 0.1) 0%, rgba(2, 11, 5, 0.5) 50%, var(--col-bg) 100%);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 1s forwards 0.5s;
+}
+
+.hero-title {
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    line-height: 0.9;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    color: var(--col-accent);
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    color: var(--col-accent);
+    width: 40px;
+    height: 40px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0) translateX(-50%);
+    }
+
+    40% {
+        transform: translateY(-20px) translateX(-50%);
+    }
+
+    60% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+}
+
+/* ==========================================================================
+   O KLUBU (ABOUT)
+   ========================================================================== */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--col-text-muted);
+}
+
+.about-placeholder-text {
+    font-style: italic;
+    color: var(--col-accent) !important;
+    border-left: 3px solid var(--col-accent);
+    padding-left: 1rem;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background-color: var(--col-surface);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--col-surface-border);
+    padding: 2rem;
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: all var(--transition-medium);
+    box-shadow: var(--shadow-glass);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--col-accent);
+    box-shadow: var(--shadow-gold);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    color: var(--col-accent);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.text-stat {
+    font-size: 2.5rem;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   TRENUTNA SEZONA
+   ========================================================================== */
+.season {
+    background-color: var(--col-primary-dark);
+}
+
+.season-panels {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+}
+
+.panel {
+    background-color: var(--col-surface);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--col-surface-border);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    box-shadow: var(--shadow-glass);
+}
+
+.panel-title {
+    font-size: 1.8rem;
+    color: var(--col-accent);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+/* Tablica */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.league-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.league-table th {
+    font-family: var(--font-heading);
+    color: var(--col-accent);
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.league-table td {
+    padding: 0.8rem 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.league-table td:nth-child(2) {
+    text-align: left;
+}
+
+.highlight-row {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-left: 3px solid var(--col-accent);
+}
+
+.highlight-row td {
+    color: var(--col-accent);
+    font-weight: bold;
+}
+
+/* Gumb za HNS Semafor */
+.table-cta {
+    width: 100%;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+/* Rezultati */
+.match-card {
+    background-color: var(--col-bg);
+    border-radius: var(--radius-sm);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #666;
+}
+
+.result-win {
+    border-left-color: #2ecc71;
+}
+
+.result-draw {
+    border-left-color: #95a5a6;
+}
+
+.result-loss {
+    border-left-color: #e74c3c;
+}
+
+.match-date {
+    font-size: 0.8rem;
+    color: var(--col-text-muted);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.match-teams {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.team {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.score {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    padding: 0.2rem 0.8rem;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0 1rem;
+}
+
+.win-score {
+    color: #2ecc71;
+}
+
+.draw-score {
+    color: #bdc3c7;
+}
+
+.loss-score {
+    color: #e74c3c;
+}
+
+
+/* ==========================================================================
+   MOMČAD
+   ========================================================================== */
+.team-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid var(--col-text-muted);
+    color: var(--col-text-muted);
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--col-accent);
+    color: var(--col-primary-dark);
+    border-color: var(--col-accent);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.player-card {
+    background-color: var(--col-surface);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--col-surface-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-glass);
+    transition: all var(--transition-medium);
+    border-bottom: 3px solid transparent;
+}
+
+.player-card:hover {
+    transform: translateY(-10px);
+    border-bottom-color: var(--col-accent);
+    box-shadow: var(--shadow-md), var(--shadow-gold);
+}
+
+.player-photo {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.player-number {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--col-accent);
+    opacity: 0.5;
+    line-height: 1;
+}
+
+.player-card:hover .player-number {
+    opacity: 1;
+}
+
+.player-info {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.player-name {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.player-position {
+    color: var(--col-text-muted);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   RASPORED UTAKMICA
+   ========================================================================== */
+.schedule {
+    background-color: var(--col-primary-dark);
+}
+
+/* Istaknuta sljedeća utakmica */
+.next-match-card {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, rgba(10, 30, 61, 0.6), rgba(59, 130, 246, 0.08));
+    backdrop-filter: var(--backdrop-blur);
+    border: 2px solid var(--col-accent);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.15), var(--shadow-glass);
+    text-align: center;
+}
+
+.next-match-label {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    color: var(--col-accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.next-match-label::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--col-accent);
+    margin: 0.8rem auto 0;
+    border-radius: 2px;
+}
+
+.next-match-teams {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.next-match-team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    min-width: 140px;
+}
+
+.next-match-team span {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.next-match-crest {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--col-accent);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+.next-match-crest-placeholder {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--col-surface);
+    border: 3px solid var(--col-surface-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.next-match-vs {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--col-text-muted);
+    opacity: 0.5;
+}
+
+.next-match-info {
+    margin-bottom: 2rem;
+}
+
+.next-match-datetime {
+    font-size: 1.1rem;
+    color: var(--col-text);
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+.next-match-venue {
+    font-size: 0.95rem;
+    color: var(--col-text-muted);
+    margin-bottom: 1rem;
+}
+
+/* Countdown timer */
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--col-surface-border);
+}
+
+.countdown-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 60px;
+}
+
+.countdown-num {
+    font-family: var(--font-heading);
+    font-size: 2.8rem;
+    color: var(--col-accent);
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.countdown-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--col-text-muted);
+    letter-spacing: 1px;
+    margin-top: 0.3rem;
+}
+
+.countdown-sep {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--col-text-muted);
+    opacity: 0.4;
+    align-self: flex-start;
+    line-height: 1;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    width: 2px;
+    background-color: rgba(59, 130, 246, 0.3);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 13px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--col-accent);
+    box-shadow: 0 0 10px var(--col-accent);
+}
+
+.timeline-content {
+    background-color: var(--col-surface);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--col-surface-border);
+    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-glass);
+    position: relative;
+    transition: all var(--transition-fast);
+}
+
+.timeline-content:hover {
+    transform: translateX(5px);
+    border-left: 3px solid var(--col-accent);
+}
+
+.match-time {
+    color: var(--col-accent);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.match-teams-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.vs {
+    color: var(--col-text-muted);
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin: 0 0.5rem;
+}
+
+.match-location {
+    color: var(--col-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.match-tag {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tag-home {
+    background-color: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+}
+
+.tag-away {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+}
+
+
+
+
+/* ==========================================================================
+   GALERIJA
+   ========================================================================== */
+.gallery {
+    background-color: var(--col-primary-dark);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    aspect-ratio: 1;
+    background: linear-gradient(45deg, var(--col-primary), var(--col-surface));
+    border-radius: var(--radius-sm);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-item svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(10, 30, 61, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.zoom-icon {
+    font-size: 2rem;
+    color: var(--col-accent);
+    transform: translateY(20px);
+    transition: transform var(--transition-fast);
+}
+
+.gallery-item:hover .zoom-icon {
+    transform: translateY(0);
+}
+
+/* Lightbox Modal */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    animation: zoomIn 0.3s ease;
+}
+
+.lightbox-placeholder {
+    width: 600px;
+    height: 400px;
+    background: var(--col-primary);
+    border: 3px solid var(--col-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--col-accent);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: var(--col-text);
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.lightbox-close:hover {
+    color: var(--col-accent);
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ==========================================================================
+   KONTAKT
+   ========================================================================== */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-form {
+    background-color: var(--col-surface);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--col-surface-border);
+    padding: 2.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-glass);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--col-text-muted);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius-sm);
+    color: var(--col-text);
+    font-family: var(--font-body);
+    transition: border-color var(--transition-fast);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--col-accent);
+}
+
+.contact-form .btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.info-card {
+    background-color: var(--col-surface);
+    backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--col-surface-border);
+    padding: 2.5rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-glass);
+    margin-bottom: 2rem;
+}
+
+.info-card h3 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--col-accent);
+    margin-bottom: 1.5rem;
+}
+
+.info-card ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-icon {
+    font-size: 1.5rem;
+}
+
+.social-links {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-links p {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    background-color: var(--col-accent);
+    color: var(--col-primary-dark);
+}
+
+.map-container {
+    height: 300px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer {
+    background-color: #020510;
+    padding: 4rem 0 0 0;
+    border-top: 3px solid var(--col-accent);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.footer-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--col-text);
+    margin: 1rem 0 0.5rem;
+}
+
+.footer-brand p {
+    color: var(--col-text-muted);
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-col h4 {
+    color: var(--col-accent);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-col ul li a {
+    color: var(--col-text-muted);
+}
+
+.footer-col ul li a:hover {
+    color: var(--col-accent);
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.5rem 0;
+    text-align: center;
+    color: var(--col-text-muted);
+    font-size: 0.85rem;
+    position: relative;
+}
+
+.designer {
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================================================
+   ANIMACIJE
+   ========================================================================== */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 {
+    transition-delay: 0.2s;
+}
+
+.item-1 {
+    transition-delay: 0.1s;
+}
+
+.item-2 {
+    transition-delay: 0.2s;
+}
+
+.item-3 {
+    transition-delay: 0.3s;
+}
+
+.item-4 {
+    transition-delay: 0.4s;
+}
+
+
+/* ==========================================================================
+   RESPONSIVNOST
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .about-grid,
+    .season-panels,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+
+    .timeline::before {
+        left: 15px;
+    }
+
+    .timeline-dot {
+        left: 8px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .timeline-item {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background-color: rgba(6, 19, 38, 0.98);
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.4s ease-in-out;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
