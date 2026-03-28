@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     el.innerText = current;
                     requestAnimationFrame(updateCount);
                 } else {
-                    el.innerText = target + (el.getAttribute('data-target') == '120' ? '+' : '');
+                    el.innerText = target + (el.getAttribute('data-target') == '30' ? '+' : '');
                 }
             };
             updateCount();
@@ -120,43 +120,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const players = [
         // --- VRATARI ---
-        { id: 1, name: "Ivan Vidmar", position: "Vratar", category: "golmani", number: 1 },
-        { id: 2, name: "Igor Bošnjak", position: "Vratar", category: "golmani", number: 8 },
-        { id: 3, name: "Igor Matoković", position: "Vratar", category: "golmani", number: 12 },
-        { id: 4, name: "Željko Vidmar", position: "Vratar", category: "golmani", number: 16 },
+        { id: 1, name: "Ivan Vidmar", position: "Vratar", category: "golmani", number: 1, photo: 'ivan-vidmar.jpg' },
+        { id: 2, name: "Igor Bošnjak", position: "Vratar", category: "strijelci", number: 8, photo: 'igor-bosnjak.jpg', goals: 2 },
+        { id: 3, name: "Igor Matoković", position: "Vratar", category: "golmani", number: 12, photo: 'igor-matokovic.jpg' },
+        { id: 4, name: "Željko Vidmar", position: "Vratar", category: "golmani", number: 16, photo: 'zeljko-vidmar.jpg' },
 
         // --- BRANIČI ---
-        { id: 5, name: "Marijan Baričević", position: "Branič", category: "obranbeni", number: 2 },
-        { id: 6, name: "Ivan Blagojević", position: "Branič", category: "obranbeni", number: 4, photo: 'ivan-blagojevic.jpg' },
-        { id: 7, name: "Dalibor Bardač", position: "Branič", category: "obranbeni", number: 5 },
-        { id: 8, name: "Filip Bobinac", position: "Branič", category: "obranbeni", number: 6 },
-        { id: 9, name: "Marko Njerš", position: "Branič", category: "obranbeni", number: 7 },
-        { id: 10, name: "Ivica Pavić", position: "Branič", category: "obranbeni", number: 10 },
-        { id: 11, name: "Nikola Majić", position: "Branič", category: "obranbeni", number: 13 },
-        { id: 12, name: "Marko Ninić", position: "Branič", category: "obranbeni", number: 14 },
-        { id: 13, name: "Leon Krpan", position: "Branič", category: "obranbeni", number: 16 },
+        { id: 5, name: "Marijan Baričević", position: "Branič", category: "obranbeni", number: 2, photo: 'marijan-baricevic.jpg' },
+        { id: 6, name: "Ivan Blagojević", position: "Branič", category: "strijelci", number: 4, photo: 'ivan-blagojevic.jpg', goals: 4 },
+        { id: 7, name: "Dalibor Bardač", position: "Branič", category: "strijelci", number: 5, photo: 'dalibor-bardac.jpg', goals: 1 },
+        { id: 8, name: "Filip Bobinac", position: "Branič", category: "strijelci", number: 6, photo: 'filip-bobinac.jpg', goals: 1 },
+        { id: 9, name: "Marko Njerš", position: "Branič", category: "obranbeni", number: 7, photo: 'marko-njers.jpg' },
+        { id: 10, name: "Ivica Pavić", position: "Branič", category: "obranbeni", number: 10, photo: 'ivica-pavic.jpg' },
+        { id: 11, name: "Nikola Majić", position: "Branič", category: "obranbeni", number: 13, photo: 'nikola-majic.jpg' },
+        { id: 12, name: "Marko Ninić", position: "Branič", category: "obranbeni", number: 14, photo: 'marko-ninic.jpg' },
 
         // --- VEZNJACI ---
-        { id: 14, name: "Ivan Abramović", position: "Vezni", category: "vezni", number: 7 },
-        { id: 15, name: "Alen Jelčić", position: "Vezni", category: "vezni", number: 7 },
-        { id: 16, name: "Antonio Miličević", position: "Vezni", category: "vezni", number: 7 },
-        { id: 17, name: "Matej Kukić", position: "Vezni", category: "vezni", number: 9 },
-        { id: 18, name: "Antonio Arbanas", position: "Vezni", category: "vezni", number: 11 },
-        { id: 19, name: "Josip Knežević", position: "Vezni", category: "vezni", number: 13 },
-        { id: 20, name: "Borna Botički", position: "Vezni", category: "vezni", number: 14 },
-        { id: 21, name: "Zvonko Radman", position: "Vezni", category: "vezni", number: 14 },
-        { id: 22, name: "Željko Metlar", position: "Vezni", category: "vezni", number: 17 },
-        { id: 23, name: "Robert Radivojević", position: "Vezni", category: "vezni", number: 17 },
+        { id: 14, name: "Ivan Abramović", position: "Vezni", category: "vezni", number: 7, photo: 'ivan-abramovic.jpg' },
+        { id: 16, name: "Antonio Miličević", position: "Vezni", category: "strijelci", number: 7, photo: 'antonio-milicevic.jpg', goals: 4 },
+        { id: 17, name: "Matej Kukić", position: "Vezni", category: "strijelci", number: 9, photo: 'matej-kukic.jpg', goals: 3 },
+        { id: 18, name: "Antonio Arbanas", position: "Vezni", category: "vezni", number: 11, photo: 'antonio-arbanas.jpg' },
+        { id: 19, name: "Josip Knežević", position: "Vezni", category: "vezni", number: 13, photo: 'josip-knezevic.jpg' },
+        { id: 20, name: "Borna Botički", position: "Vezni", category: "vezni", number: 14, photo: 'borna-boticki.jpg' },
+        { id: 22, name: "Željko Metlar", position: "Vezni", category: "strijelci", number: 17, photo: 'zeljko-metlar.jpg', goals: 1 },
+        { id: 23, name: "Robert Radivojević", position: "Vezni", category: "vezni", number: 17, photo: 'robert-radivojevic.jpg' },
 
         // --- NAPADAČI ---
-        { id: 24, name: "Kristijan Lovrić", position: "Napadač", category: "napadaci", number: 23 },
-        { id: 25, name: "Josip Obradović", position: "Napadač", category: "napadaci", number: 2 },
+        { id: 24, name: "Kristijan Lovrić", position: "Napadač", category: "strijelci", number: 23, photo: 'kristijan-lovric.jpg', goals: 1 },
+        { id: 25, name: "Josip Obradović", position: "Napadač", category: "napadaci", number: 2, photo: 'josip-obradovic.jpg' },
         { id: 26, name: "Mateo Krpan", position: "Napadač", category: "napadaci", number: 3, photo: 'mateo-krpan.jpg' },
-        { id: 27, name: "Dominik Ribičić", position: "Napadač", category: "napadaci", number: 3 },
-        { id: 28, name: "Dejan Šestak", position: "Napadač", category: "napadaci", number: 6 },
-        { id: 29, name: "Gabrijel Klobučar", position: "Napadač", category: "napadaci", number: 14 },
-        { id: 30, name: "Marko Ivčetić", position: "Napadač", category: "napadaci", number: 16 },
-        { id: 31, name: "Leo Jug", position: "Napadač", category: "napadaci", number: 20 }
+        { id: 27, name: "Dominik Ribičić", position: "Napadač", category: "napadaci", number: 3, photo: 'dominik-ribicic.jpg' },
+        { id: 28, name: "Dejan Šestak", position: "Napadač", category: "napadaci", number: 6, photo: 'dejan-sestak.jpg' },
+        { id: 29, name: "Gabrijel Klobučar", position: "Napadač", category: "napadaci", number: 14, photo: 'gabrijel-klobucar.jpg' },
+        { id: 30, name: "Marko Ivčetić", position: "Napadač", category: "napadaci", number: 16, photo: 'marko-ivcetic.jpg' },
+        { id: 31, name: "Leo Jug", position: "Napadač", category: "napadaci", number: 20, photo: 'leo-jug.jpg' }
     ];
 
     // --- OVU FUNKCIJU ZAMIJENI U SVOJEM SCRIPT.JS ---
@@ -169,21 +166,35 @@ document.addEventListener('DOMContentLoaded', () => {
             ? players
             : players.filter(p => p.category === filterCategory);
 
+        // Helper za deklinaciju riječi "gol"
+        const getGolLabel = (count) => {
+            if (count % 10 === 1 && count % 100 !== 11) return "Gol";
+            if ([2, 3, 4].includes(count % 10) && ![12, 13, 14].includes(count % 100)) return "Gola";
+            return "Golova";
+        };
+
         filtered.forEach((player, index) => {
             const delay = (index % 4) * 0.1;
 
-            // Definiraj putanju do slike. Ako igrač nema sliku, koristi placeholder.
+            // Definiraj putanju do slike
             const photoPath = player.photo ? `images/igraci/${player.photo}` : 'images/omladinac.jpg';
+
+            const goalsHtml = player.goals ? `
+                <div class="player-goals-badge">
+                    <span class="goals-count">${player.goals}</span>
+                    <span class="goals-label">${getGolLabel(player.goals)}</span>
+                </div>
+            ` : '';
 
             const html = `
             <div class="player-card scroll-animate visible" style="transition-delay: ${delay}s">
                 <div class="player-photo">
                     <img src="${photoPath}" alt="${player.name}" class="player-img">
                     <div class="player-number">${player.number}</div>
+                    ${goalsHtml}
                 </div>
                 <div class="player-info">
                     <h3 class="player-name">${player.name}</h3>
-                    <div class="player-position">${player.position}</div>
                 </div>
             </div>
         `;
@@ -204,82 +215,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 7. Generiranje Galerije i Lightbox
-    const galleryGrid = document.getElementById('gallery-grid');
-    if (galleryGrid) {
-        for (let i = 1; i <= 8; i++) {
-            const html = `
-                <div class="gallery-item scroll-animate" style="transition-delay: ${(i % 4) * 0.1}s">
-                    <svg viewBox="0 0 100 100" width="50" height="50" fill="none" stroke="var(--col-text-muted)" stroke-width="2">
-                        <rect x="10" y="20" width="80" height="60" rx="5" />
-                        <circle cx="35" cy="45" r="10" />
-                        <path d="M10 80 L50 40 L90 80" />
-                    </svg>
-                    <div class="gallery-overlay">
-                        <svg class="zoom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="40" height="40">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            <line x1="11" y1="8" x2="11" y2="14"></line>
-                            <line x1="8" y1="11" x2="14" y2="11"></line>
-                        </svg>
-                    </div>
-                </div>
-            `;
-            galleryGrid.insertAdjacentHTML('beforeend', html);
-        }
-    }
+    // 7. (Galerija uklonjena)
 
-    // Lightbox Logic
-    const lightbox = document.getElementById('lightbox');
-    const lightboxClose = document.querySelector('.lightbox-close');
-    const galleryItems = document.querySelectorAll('.gallery-item');
-
-    if (lightbox) {
-        galleryItems.forEach(item => {
-            item.addEventListener('click', () => {
-                lightbox.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
-        });
-
-        lightboxClose.addEventListener('click', () => {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = '';
-        });
-
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-                lightbox.classList.remove('active');
-                document.body.style.overflow = '';
-            }
-        });
-    }
-
-    // 8. Contact Form Prevent Default
-    const contactForm = document.querySelector('.contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = contactForm.querySelector('button');
-            const originalText = btn.innerText;
-            btn.innerText = 'Šalje se...';
-            btn.style.opacity = '0.7';
-
-            setTimeout(() => {
-                btn.innerText = 'Poslano! Hvala vam.';
-                btn.style.backgroundColor = '#2ecc71';
-                btn.style.color = 'white';
-                btn.style.opacity = '1';
-                contactForm.reset();
-
-                setTimeout(() => {
-                    btn.innerText = originalText;
-                    btn.style.backgroundColor = '';
-                    btn.style.color = '';
-                }, 3000);
-            }, 1000);
-        });
-    }
+    // 8. (Forma se sada šalje direktno preko FormSubmit.co servisa)
 
     // 9. Countdown Timer — Sljedeća utakmica (29.03.2026.)
     const cdDays = document.getElementById('cd-days');

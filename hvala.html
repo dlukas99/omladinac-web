@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hvala vam — NK Omladinac Čaglin</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/omladinac.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .success-page {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--col-primary-dark), var(--col-bg));
+            text-align: center;
+            padding: var(--space-md);
+        }
+
+        .success-content {
+            background-color: var(--col-surface);
+            backdrop-filter: var(--backdrop-blur);
+            border: 1px solid var(--col-surface-border);
+            padding: var(--space-xl) var(--space-lg);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-glass);
+            max-width: 600px;
+            width: 100%;
+            animation: fadeUp 0.8s ease forwards;
+        }
+
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            background-color: var(--col-accent);
+            color: var(--col-primary-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            margin: 0 auto var(--space-md);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .success-title {
+            font-size: 3.5rem;
+            color: var(--col-accent);
+            margin-bottom: var(--space-sm);
+        }
+
+        .success-message {
+            font-size: 1.2rem;
+            color: var(--col-text-muted);
+            margin-bottom: var(--space-lg);
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="success-page">
+        <div class="success-content">
+            <div class="success-icon">✓</div>
+            <h1 class="success-title">HVALA VAM!</h1>
+            <p class="success-message">Vaša poruka je uspješno poslana! Javit ćemo Vam se u najkraćem mogućem roku.</p>
+            <a href="index.html" class="btn btn-primary">Vrati se na početnu</a>
+        </div>
+    </main>
+</body>
+
+</html>
