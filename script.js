@@ -261,4 +261,41 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCountdown();
         setInterval(updateCountdown, 1000);
     }
+
+    // 10. Automatizacija grbova protivnika
+    function initOpponentCrests() {
+        // Mapa koja povezuje ime kluba s nazivom slike (bez ekstenzije)
+        const clubMap = {
+            "NK Eminovci": "eminovci",
+            "NK Graničar Bučje": "bucje",
+            "NK Dinamo Badljevina": "badljevina",
+            "NK Slavonija Prekopakra": "prekopakra",
+            "NK Sulkovci": "sulkovci",
+            "NK Parasan": "parasan",
+            "HNK Dobrovac": "dobrovac",
+            "NK BSK Biškupci": "biskupci",
+            "NK Croatia D. Obrijež": "obrijez",
+            "NK Ovčare": "ovcare",
+            "NK Omladinac Čaglin": "omladinac"
+        };
+
+        const crestImages = document.querySelectorAll('img[data-club]');
+
+        crestImages.forEach(img => {
+            const clubName = img.getAttribute('data-club');
+            const clubSlug = clubMap[clubName] || clubName.toLowerCase().split(' ').pop();
+            
+            // Postavi početnu putanju
+            img.src = `images/grbovi/${clubSlug}.jpg`;
+            img.alt = clubName;
+
+            // Fallback ako slika nedostaje (npr. koristimo omladinac.jpg ili neku drugu generic sliku)
+            img.onerror = () => {
+                img.src = 'images/omladinac.jpg'; // Ili neka druga generic nogometna slika
+                img.onerror = null; // Spriječi beskonačnu petlju ako i fallback fali
+            };
+        });
+    }
+
+    initOpponentCrests();
 });
