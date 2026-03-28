@@ -162,9 +162,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!teamGrid) return;
         teamGrid.innerHTML = '';
 
-        const filtered = filterCategory === 'all'
-            ? players
+        // Kopiraj listu da ne mijenjamo izvornu
+        let filtered = filterCategory === 'all'
+            ? [...players]
             : players.filter(p => p.category === filterCategory);
+
+        // Sortiranje po golovima (od najvećeg prema najmanjem) ako je filter 'strijelci'
+        if (filterCategory === 'strijelci') {
+            filtered.sort((a, b) => (b.goals || 0) - (a.goals || 0));
+        }
 
         // Helper za deklinaciju riječi "gol"
         const getGolLabel = (count) => {
