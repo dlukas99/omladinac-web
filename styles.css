@@ -1364,7 +1364,19 @@ h1, h2, h3, h4, p, span {
 
 .designer {
     margin-top: 1rem;
-    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.designer a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.designer a:hover {
+    color: var(--col-accent);
 }
 
 /* ==========================================================================
