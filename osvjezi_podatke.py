@@ -34,6 +34,12 @@ def osvjezi_podatke():
             pos = row.select_one(".position")
             club = row.select_one(".club")
             played = row.select_one(".played")
+            wins = row.select_one(".wins")
+            draws = row.select_one(".draws")
+            losses = row.select_one(".losses")
+            gplus = row.select_one(".gplus")
+            gminus = row.select_one(".gminus")
+            gdiff = row.select_one(".gdiff")
             points = row.select_one(".points")
             
             if pos and club and played and points:
@@ -41,6 +47,12 @@ def osvjezi_podatke():
                     "pozicija": clean_text(pos.text).replace(".", ""),
                     "klub": clean_text(club.text),
                     "utakmice": clean_text(played.text),
+                    "pobjede": clean_text(wins.text) if wins else "0",
+                    "nerijeseno": clean_text(draws.text) if draws else "0",
+                    "porazi": clean_text(losses.text) if losses else "0",
+                    "gol_plus": clean_text(gplus.text) if gplus else "0",
+                    "gol_minus": clean_text(gminus.text) if gminus else "0",
+                    "gol_razlika": clean_text(gdiff.text) if gdiff else "0",
                     "bodovi": clean_text(points.text)
                 })
 
