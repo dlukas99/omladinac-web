@@ -1,0 +1,36 @@
+name: Update HNS Semafor Data
+
+on:
+  schedule:
+    - cron: '0 */12 * * *' # Svakih 12 sati
+  workflow_dispatch: # Omogućava ručno pokretanje
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Dozvala za pisanje/commit u repozitorij
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: Run scraper
+        run: python osvjezi_podatke.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add podaci.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automatsko ažuriranje podataka s HNS Semafora" && git push)

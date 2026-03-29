@@ -156,23 +156,19 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 31, name: "Leo Jug", position: "Napadač", category: "napadaci", number: 20, photo: 'leo-jug.jpg' }
     ];
 
-    // --- OVU FUNKCIJU ZAMIJENI U SVOJEM SCRIPT.JS ---
-
+    // 5. Roster Momčadi
     function renderPlayers(filterCategory = 'all') {
         if (!teamGrid) return;
         teamGrid.innerHTML = '';
 
-        // Kopiraj listu da ne mijenjamo izvornu
         let filtered = filterCategory === 'all'
             ? [...players]
             : players.filter(p => p.category === filterCategory);
 
-        // Sortiranje po golovima (od najvećeg prema najmanjem) ako je filter 'strijelci'
         if (filterCategory === 'strijelci') {
             filtered.sort((a, b) => (b.goals || 0) - (a.goals || 0));
         }
 
-        // Helper za deklinaciju riječi "gol"
         const getGolLabel = (count) => {
             if (count % 10 === 1 && count % 100 !== 11) return "Gol";
             if ([2, 3, 4].includes(count % 10) && ![12, 13, 14].includes(count % 100)) return "Gola";
@@ -181,8 +177,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         filtered.forEach((player, index) => {
             const delay = (index % 4) * 0.1;
-
-            // Definiraj putanju do slike
             const photoPath = player.photo ? `images/igraci/${player.photo}` : 'images/omladinac.jpg';
 
             const goalsHtml = player.goals ? `
@@ -207,7 +201,8 @@ document.addEventListener('DOMContentLoaded', () => {
             teamGrid.insertAdjacentHTML('beforeend', html);
         });
     }
-    // Inicijalizacija igrača pri učitavanju
+
+    // Inicijalno iscrtavanje (prazno dok JSON ne dođe, ili s hardkodiranim)
     renderPlayers();
 
     // 6. Filtriranje Momčadi
@@ -221,50 +216,202 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 7. (Galerija uklonjena)
+    // 11. Dinamičko učitavanje podataka s HNS Semafora
+    async function loadClubData() {
+        try {
+            const response = await fetch('podaci.json');
+            if (!response.ok) throw new Error('Podaci nisu dostupni');
+            const data = await response.json();
 
-    // 8. (Forma se sada šalje direktno preko FormSubmit.co servisa)
+            // A. Ljestvica
+            const tableBody = document.getElementById('league-table-body');
+            if (tableBody && data.ljestvica) {
+                tableBody.innerHTML = '';
+                data.ljestvica.forEach(row => {
+                    const isOmladinac = row.klub.includes('Omladinac');
+                    const tr = document.createElement('tr');
+                    if (isOmladinac) tr.className = 'highlight-row';
+                    tr.innerHTML = `
+                        <td>${row.pozicija}</td>
+                        <td>${isOmladinac ? '<b>' + row.klub + '</b>' : row.klub}</td>
+                        <td>${row.utakmice}</td>
+                        <td>${row.bodovi}</td>
+                    `;
+                    tableBody.appendChild(tr);
+                });
+            }
 
-    // 9. Countdown Timer — Sljedeća utakmica (29.03.2026.)
-    const cdDays = document.getElementById('cd-days');
-    const cdHours = document.getElementById('cd-hours');
-    const cdMins = document.getElementById('cd-mins');
-    const cdSecs = document.getElementById('cd-secs');
+            // B. Zadnji Rezultati
+            const resultsContainer = document.getElementById('results-container');
+            if (resultsContainer && data.zadnji_rezultati) {
+                resultsContainer.innerHTML = '';
+                // Uzmi zadnjih 5
+                data.zadnji_rezultati.slice(0, 5).forEach(res => {
+                    const scoreArr = res.rezultat.split(':').map(s => parseInt(s.trim()));
+                    const isHome = res.domacin.includes('Omladinac');
+                    const omladinacScore = isHome ? scoreArr[0] : scoreArr[1];
+                    const opponentScore = isHome ? scoreArr[1] : scoreArr[0];
+                    
+                    let resultType = 'draw';
+                    if (omladinacScore > opponentScore) resultType = 'win';
+                    else if (omladinacScore < opponentScore) resultType = 'loss';
 
-    if (cdDays && cdHours && cdMins && cdSecs) {
-        const matchDate = new Date('2026-03-29T16:00:00+01:00');
+                    const card = `
+                        <div class="match-card result-${resultType}">
+                            <div class="match-date">${res.datum} | ${res.kolo}</div>
+                            <div class="match-teams">
+                                <span class="team">${res.domacin}</span>
+                                <span class="score ${resultType}-score">${res.rezultat}</span>
+                                <span class="team text-right">${res.gost}</span>
+                            </div>
+                        </div>
+                    `;
+                    resultsContainer.insertAdjacentHTML('beforeend', card);
+                });
+            }
 
-        function updateCountdown() {
+            // C. Raspored (Timeline)
+            const timeline = document.getElementById('upcoming-timeline');
+            if (timeline && data.raspored) {
+                timeline.innerHTML = '';
+                data.raspored.forEach((match, index) => {
+                    const isHome = match.domacin.includes('Omladinac');
+                    
+                    const item = `
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="match-time">${match.kolo} — ${match.datum} — ${match.vrijeme}</div>
+                            <div class="match-teams-title">
+                                <div class="timeline-team">
+                                    <img src="" alt="" class="timeline-crest" data-club="${match.domacin}">
+                                    <span>${match.domacin}</span>
+                                </div>
+                                <span class="vs">vs</span>
+                                <div class="timeline-team">
+                                    <img src="" alt="" class="timeline-crest" data-club="${match.gost}">
+                                    <span>${match.gost}</span>
+                                </div>
+                            </div>
+                            <div class="match-location">${isHome ? '📍 Stadion Tribalj Čaglin' : '📍 Gostovanje'}</div>
+                            <span class="match-tag tag-${isHome ? 'home' : 'away'}">${isHome ? 'Domaća' : 'Gostujuća'}</span>
+                        </div>
+                    </div>
+                    `;
+                    timeline.insertAdjacentHTML('beforeend', item);
+                });
+
+                // D. Sljedeća utakmica (Prva iz rasporeda)
+                if (data.raspored.length > 0) {
+                    const next = data.raspored[0];
+                    updateNextMatchCard(next);
+                }
+            }
+
+            // E. Ažuriranje golova igrača iz HNS podataka
+            if (data.igraci && players) {
+                data.igraci.forEach(hnsPlayer => {
+                    const localPlayer = players.find(p => hnsPlayer.ime.toLowerCase().includes(p.name.split(' ').pop().toLowerCase()));
+                    if (localPlayer) {
+                        localPlayer.goals = hnsPlayer.golovi;
+                    }
+                });
+                renderPlayers(); // Ponovno iscrtaj s novim golovima
+            }
+
+            // Ponovno inicijaliziraj grbove za dinamički dodane elemente
+            initOpponentCrests();
+
+        } catch (error) {
+            console.error('Greška pri učitavanju JSON-a:', error);
+        }
+    }
+
+    function updateNextMatchCard(match) {
+        const card = document.getElementById('next-match-card');
+        if (!card) return;
+
+        const isHome = match.domacin.includes('Omladinac');
+        
+        // Ažuriraj labelu kola
+        card.querySelector('.next-match-label').textContent = `Sljedeća Utakmica — ${match.kolo}`;
+        
+        // Ažuriraj timove
+        const teamsContainer = card.querySelector('.next-match-teams');
+        teamsContainer.innerHTML = `
+            <div class="next-match-team">
+                <img src="" alt="" class="next-match-crest" data-club="${match.domacin}">
+                <span>${match.domacin}</span>
+            </div>
+            <div class="next-match-vs">VS</div>
+            <div class="next-match-team">
+                <img src="" alt="" class="next-match-crest" data-club="${match.gost}">
+                <span>${match.gost}</span>
+            </div>
+        `;
+
+        // Ažuriraj info
+        card.querySelector('.next-match-datetime').textContent = `📅 ${match.datum} — ${match.vrijeme}`;
+        card.querySelector('.next-match-venue').textContent = isHome ? '📍 Stadion Tribalj Čaglin' : '📍 Gostovanje';
+        
+        const tag = card.querySelector('.match-tag');
+        tag.className = `match-tag tag-${isHome ? 'home' : 'away'}`;
+        tag.textContent = isHome ? 'Domaća' : 'Gostujuća';
+
+        // Pokreni countdown
+        const dateParts = match.datum.split('.');
+        if (dateParts.length >= 3) {
+            const day = dateParts[0].trim();
+            const month = dateParts[1].trim();
+            const year = dateParts[2].trim();
+            const timeParts = match.vrijeme.split(':');
+            const h = timeParts[0] || "16";
+            const m = timeParts[1] || "00";
+            
+            const matchDateTime = new Date(`${year}-${month}-${day}T${h}:${m}:00`);
+            startCountdown(matchDateTime);
+        }
+    }
+
+    function startCountdown(matchDate) {
+        const cdDays = document.getElementById('cd-days');
+        const cdHours = document.getElementById('cd-hours');
+        const cdMins = document.getElementById('cd-mins');
+        const cdSecs = document.getElementById('cd-secs');
+
+        function update() {
             const now = new Date();
             const diff = matchDate - now;
 
             if (diff <= 0) {
-                cdDays.textContent = '0';
-                cdHours.textContent = '0';
-                cdMins.textContent = '0';
-                cdSecs.textContent = '0';
-                document.querySelector('.next-match-label').textContent = 'Utakmica je počela!';
+                if(cdDays) cdDays.textContent = '0';
+                if(cdHours) cdHours.textContent = '00';
+                if(cdMins) cdMins.textContent = '00';
+                if(cdSecs) cdSecs.textContent = '00';
                 return;
             }
 
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const secs = Math.floor((diff % (1000 * 60)) / 1000);
+            const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((diff % (1000 * 60)) / 1000);
 
-            cdDays.textContent = days;
-            cdHours.textContent = String(hours).padStart(2, '0');
-            cdMins.textContent = String(mins).padStart(2, '0');
-            cdSecs.textContent = String(secs).padStart(2, '0');
+            if(cdDays) cdDays.textContent = d;
+            if(cdHours) cdHours.textContent = String(h).padStart(2, '0');
+            if(cdMins) cdMins.textContent = String(m).padStart(2, '0');
+            if(cdSecs) cdSecs.textContent = String(s).padStart(2, '0');
         }
 
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
+        update();
+        if (window.countdownInterval) clearInterval(window.countdownInterval);
+        window.countdownInterval = setInterval(update, 1000);
     }
+
+    // Pozovi učitavanje podataka
+    loadClubData();
 
     // 10. Automatizacija grbova protivnika
     function initOpponentCrests() {
-        // Mapa koja povezuje ime kluba s nazivom slike (bez ekstenzije)
         const clubMap = {
             "NK Eminovci": "eminovci",
             "NK Graničar Bučje": "bucje",
@@ -272,30 +419,43 @@ document.addEventListener('DOMContentLoaded', () => {
             "NK Slavonija Prekopakra": "prekopakra",
             "NK Sulkovci": "sulkovci",
             "NK Parasan": "parasan",
+            "HNK Dobrovac Dobrovac": "dobrovac",
             "HNK Dobrovac": "dobrovac",
             "NK BSK Biškupci": "biskupci",
+            "NK Croatia Donja Obrijež": "obrijez",
             "NK Croatia D. Obrijež": "obrijez",
             "NK Ovčare": "ovcare",
-            "NK Omladinac Čaglin": "omladinac"
+            "NK Omladinac Čaglin": "omladinac",
+            "NK Jovača Marina Selo": "jovaca"
         };
 
         const crestImages = document.querySelectorAll('img[data-club]');
 
         crestImages.forEach(img => {
             const clubName = img.getAttribute('data-club');
-            const clubSlug = clubMap[clubName] || clubName.toLowerCase().split(' ').pop();
+            if (!clubName) return;
+
+            // Pronađi ključ u mapi (možda treba cleaning)
+            let clubSlug = 'omladinac';
+            if (clubMap[clubName]) {
+                clubSlug = clubMap[clubName];
+            } else {
+                // Probaj naći partial match
+                for (const key in clubMap) {
+                    if (clubName.includes(key) || key.includes(clubName)) {
+                        clubSlug = clubMap[key];
+                        break;
+                    }
+                }
+            }
             
-            // Postavi početnu putanju
             img.src = `images/grbovi/${clubSlug}.jpg`;
             img.alt = clubName;
 
-            // Fallback ako slika nedostaje (npr. koristimo omladinac.jpg ili neku drugu generic sliku)
             img.onerror = () => {
-                img.src = 'images/omladinac.jpg'; // Ili neka druga generic nogometna slika
-                img.onerror = null; // Spriječi beskonačnu petlju ako i fallback fali
+                img.src = 'images/omladinac.jpg';
+                img.onerror = null;
             };
         });
     }
-
-    initOpponentCrests();
 });
