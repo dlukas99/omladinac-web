@@ -235,6 +235,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>${row.pozicija}</td>
                         <td>${isOmladinac ? '<b>' + row.klub + '</b>' : row.klub}</td>
                         <td>${row.utakmice}</td>
+                        <td>${row.pobjede}</td>
+                        <td>${row.nerijeseno}</td>
+                        <td>${row.porazi}</td>
+                        <td>${row.gol_plus}</td>
+                        <td>${row.gol_minus}</td>
+                        <td>${row.gol_razlika}</td>
                         <td>${row.bodovi}</td>
                     `;
                     tableBody.appendChild(tr);
