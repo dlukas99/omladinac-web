@@ -1,0 +1,423 @@
+{
+    "zadnje_azurirano": "29.03.2026. 14:31",
+    "ljestvica": [
+        {
+            "pozicija": "1",
+            "klub": "NK Eminovci",
+            "utakmice": "12",
+            "bodovi": "34"
+        },
+        {
+            "pozicija": "2",
+            "klub": "NK Parasan",
+            "utakmice": "12",
+            "bodovi": "31"
+        },
+        {
+            "pozicija": "3",
+            "klub": "HNK Dobrovac Dobrovac",
+            "utakmice": "12",
+            "bodovi": "27"
+        },
+        {
+            "pozicija": "4",
+            "klub": "NK Graničar Bučje",
+            "utakmice": "12",
+            "bodovi": "21"
+        },
+        {
+            "pozicija": "5",
+            "klub": "NK Omladinac Čaglin",
+            "utakmice": "12",
+            "bodovi": "18"
+        },
+        {
+            "pozicija": "6",
+            "klub": "NK Sulkovci",
+            "utakmice": "12",
+            "bodovi": "17"
+        },
+        {
+            "pozicija": "7",
+            "klub": "NK Croatia Donja Obrijež",
+            "utakmice": "12",
+            "bodovi": "13"
+        },
+        {
+            "pozicija": "8",
+            "klub": "NK BSK Biškupci",
+            "utakmice": "11",
+            "bodovi": "10"
+        },
+        {
+            "pozicija": "9",
+            "klub": "NK Dinamo Badljevina",
+            "utakmice": "12",
+            "bodovi": "7"
+        },
+        {
+            "pozicija": "10",
+            "klub": "NK Slavonija Prekopakra",
+            "utakmice": "11",
+            "bodovi": "5"
+        },
+        {
+            "pozicija": "11",
+            "klub": "NK Ovčare",
+            "utakmice": "12",
+            "bodovi": "4"
+        }
+    ],
+    "zadnji_rezultati": [
+        {
+            "datum": "22.03.2026.",
+            "vrijeme": "16:00",
+            "domacin": "NK Parasan",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "3:0",
+            "kolo": "2. ŽNL 25/26, 13. kolo"
+        },
+        {
+            "datum": "15.03.2026.",
+            "vrijeme": "15:30",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "HNK Dobrovac Dobrovac",
+            "rezultat": "0:1",
+            "kolo": "2. ŽNL 25/26, 12. kolo"
+        },
+        {
+            "datum": "09.11.2025.",
+            "vrijeme": "14:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK BSK Biškupci",
+            "rezultat": "4:1",
+            "kolo": "2. ŽNL 25/26, 11. kolo"
+        },
+        {
+            "datum": "19.10.2025.",
+            "vrijeme": "15:00",
+            "domacin": "NK Croatia Donja Obrijež",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "1:1",
+            "kolo": "2. ŽNL 25/26, 9. kolo"
+        },
+        {
+            "datum": "12.10.2025.",
+            "vrijeme": "15:30",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Ovčare",
+            "rezultat": "3:0",
+            "kolo": "2. ŽNL 25/26, 8. kolo"
+        },
+        {
+            "datum": "05.10.2025.",
+            "vrijeme": "16:00",
+            "domacin": "NK Sulkovci",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "0:2",
+            "kolo": "2. ŽNL 25/26, 7. kolo"
+        },
+        {
+            "datum": "28.09.2025.",
+            "vrijeme": "16:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Slavonija Prekopakra",
+            "rezultat": "2:2",
+            "kolo": "2. ŽNL 25/26, 6. kolo"
+        },
+        {
+            "datum": "21.09.2025.",
+            "vrijeme": "16:30",
+            "domacin": "NK Dinamo Badljevina",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "1:2",
+            "kolo": "2. ŽNL 25/26, 5. kolo"
+        },
+        {
+            "datum": "14.09.2025.",
+            "vrijeme": "16:30",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Graničar Bučje",
+            "rezultat": "3:1",
+            "kolo": "2. ŽNL 25/26, 4. kolo"
+        },
+        {
+            "datum": "07.09.2025.",
+            "vrijeme": "17:00",
+            "domacin": "NK Eminovci",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "0:0",
+            "kolo": "2. ŽNL 25/26, 3. kolo"
+        },
+        {
+            "datum": "31.08.2025.",
+            "vrijeme": "17:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Parasan",
+            "rezultat": "0:1",
+            "kolo": "2. ŽNL 25/26, 2. kolo"
+        },
+        {
+            "datum": "24.08.2025.",
+            "vrijeme": "17:30",
+            "domacin": "HNK Dobrovac Dobrovac",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "2:0",
+            "kolo": "2. ŽNL 25/26, 1. kolo"
+        }
+    ],
+    "raspored": [
+        {
+            "datum": "29.03.2026.",
+            "vrijeme": "16:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Eminovci",
+            "rezultat": "0:0",
+            "kolo": "2. ŽNL 25/26, 14. kolo"
+        },
+        {
+            "datum": "06.04.2026.",
+            "vrijeme": "16:30",
+            "domacin": "NK Graničar Bučje",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 25/26, 15. kolo"
+        },
+        {
+            "datum": "12.04.2026.",
+            "vrijeme": "17:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Dinamo Badljevina",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 25/26, 16. kolo"
+        },
+        {
+            "datum": "18.04.2026.",
+            "vrijeme": "17:00",
+            "domacin": "NK Slavonija Prekopakra",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 25/26, 17. kolo"
+        },
+        {
+            "datum": "26.04.2026.",
+            "vrijeme": "17:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Sulkovci",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 25/26, 18. kolo"
+        },
+        {
+            "datum": "03.05.2026.",
+            "vrijeme": "17:30",
+            "domacin": "NK Ovčare",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 25/26, 19. kolo"
+        },
+        {
+            "datum": "10.05.2026.",
+            "vrijeme": "17:30",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Croatia Donja Obrijež",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 25/26, 20. kolo"
+        },
+        {
+            "datum": "24.05.2026.",
+            "vrijeme": "18:00",
+            "domacin": "NK BSK Biškupci",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 25/26, 22. kolo"
+        }
+    ],
+    "igraci": [
+        {
+            "broj": "8",
+            "ime": "Igor Bošnjak",
+            "pozicija": "Vratar",
+            "golovi": 2
+        },
+        {
+            "broj": "12",
+            "ime": "Igor Matoković",
+            "pozicija": "Vratar",
+            "golovi": 0
+        },
+        {
+            "broj": "1",
+            "ime": "Ivan Vidmar",
+            "pozicija": "Vratar",
+            "golovi": 0
+        },
+        {
+            "broj": "16",
+            "ime": "Željko Vidmar",
+            "pozicija": "Vratar",
+            "golovi": 0
+        },
+        {
+            "broj": "7",
+            "ime": "Ivan Abramović",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "11",
+            "ime": "Antonio Arbanas",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "5",
+            "ime": "Dalibor Bardač",
+            "pozicija": "Igrač",
+            "golovi": 1
+        },
+        {
+            "broj": "2",
+            "ime": "Marijan Baričević",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "4",
+            "ime": "Ivan Blagojević",
+            "pozicija": "Igrač",
+            "golovi": 4
+        },
+        {
+            "broj": "6",
+            "ime": "Filip Bobinac",
+            "pozicija": "Igrač",
+            "golovi": 1
+        },
+        {
+            "broj": "14",
+            "ime": "Borna Botički",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "16",
+            "ime": "Marko Ivčetić",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "7",
+            "ime": "Alen Jelčić",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "20",
+            "ime": "Leo Jug",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "14",
+            "ime": "Gabrijel Klobučar",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "13",
+            "ime": "Josip Knežević",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "16",
+            "ime": "Leon Krpan",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "3",
+            "ime": "Mateo Krpan",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "9",
+            "ime": "Matej Kukić",
+            "pozicija": "Igrač",
+            "golovi": 3
+        },
+        {
+            "broj": "23",
+            "ime": "Kristijan Lovrić",
+            "pozicija": "Igrač",
+            "golovi": 1
+        },
+        {
+            "broj": "13",
+            "ime": "Nikola Majić",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "17",
+            "ime": "Željko Metlar",
+            "pozicija": "Igrač",
+            "golovi": 1
+        },
+        {
+            "broj": "7",
+            "ime": "Antonio Miličević",
+            "pozicija": "Igrač",
+            "golovi": 4
+        },
+        {
+            "broj": "14",
+            "ime": "Marko Ninić",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "7",
+            "ime": "Marko Njerš",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "2",
+            "ime": "Josip Obradović",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "10",
+            "ime": "Ivica Pavić",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "17",
+            "ime": "Robert Radivojević",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "14",
+            "ime": "Zvonko Radman",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "3",
+            "ime": "Dominik Ribičić",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "6",
+            "ime": "Dejan Šestak",
+            "pozicija": "Igrač",
+            "golovi": 0
+        }
+    ]
+}
