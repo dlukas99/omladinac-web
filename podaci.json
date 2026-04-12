@@ -1,16 +1,16 @@
 {
-    "zadnje_azurirano": "12.04.2026. 12:41",
+    "zadnje_azurirano": "12.04.2026. 18:03",
     "ljestvica": [
         {
             "pozicija": "1",
             "klub": "NK Eminovci",
-            "utakmice": "14",
+            "utakmice": "15",
             "pobjede": "13",
             "nerijeseno": "1",
-            "porazi": "0",
+            "porazi": "1",
             "gol_plus": "56",
-            "gol_minus": "10",
-            "gol_razlika": "+46",
+            "gol_minus": "11",
+            "gol_razlika": "+45",
             "bodovi": "40"
         },
         {
@@ -28,113 +28,121 @@
         {
             "pozicija": "3",
             "klub": "HNK Dobrovac Dobrovac",
-            "utakmice": "13",
-            "pobjede": "9",
+            "utakmice": "14",
+            "pobjede": "10",
             "nerijeseno": "0",
             "porazi": "4",
-            "gol_plus": "31",
+            "gol_plus": "32",
             "gol_minus": "16",
-            "gol_razlika": "+15",
-            "bodovi": "27"
+            "gol_razlika": "+16",
+            "bodovi": "30"
         },
         {
             "pozicija": "4",
             "klub": "NK Graničar Bučje",
-            "utakmice": "14",
+            "utakmice": "15",
             "pobjede": "7",
             "nerijeseno": "4",
-            "porazi": "3",
-            "gol_plus": "37",
-            "gol_minus": "23",
-            "gol_razlika": "+14",
+            "porazi": "4",
+            "gol_plus": "38",
+            "gol_minus": "26",
+            "gol_razlika": "+12",
             "bodovi": "25"
         },
         {
             "pozicija": "5",
             "klub": "NK Sulkovci",
-            "utakmice": "13",
+            "utakmice": "14",
             "pobjede": "6",
-            "nerijeseno": "2",
+            "nerijeseno": "3",
             "porazi": "5",
-            "gol_plus": "33",
-            "gol_minus": "25",
+            "gol_plus": "34",
+            "gol_minus": "26",
             "gol_razlika": "+8",
-            "bodovi": "20"
+            "bodovi": "21"
         },
         {
             "pozicija": "6",
             "klub": "NK Omladinac Čaglin",
-            "utakmice": "14",
-            "pobjede": "5",
+            "utakmice": "15",
+            "pobjede": "6",
             "nerijeseno": "3",
             "porazi": "6",
-            "gol_plus": "19",
-            "gol_minus": "20",
-            "gol_razlika": "-1",
-            "bodovi": "18"
+            "gol_plus": "21",
+            "gol_minus": "21",
+            "gol_razlika": "0",
+            "bodovi": "21"
         },
         {
             "pozicija": "7",
             "klub": "NK Croatia Donja Obrijež",
-            "utakmice": "14",
-            "pobjede": "4",
+            "utakmice": "15",
+            "pobjede": "5",
             "nerijeseno": "2",
             "porazi": "8",
-            "gol_plus": "22",
-            "gol_minus": "43",
-            "gol_razlika": "-21",
-            "bodovi": "14"
+            "gol_plus": "27",
+            "gol_minus": "44",
+            "gol_razlika": "-17",
+            "bodovi": "17"
         },
         {
             "pozicija": "8",
-            "klub": "NK Dinamo Badljevina",
+            "klub": "NK BSK Biškupci",
             "utakmice": "14",
             "pobjede": "4",
-            "nerijeseno": "1",
-            "porazi": "9",
-            "gol_plus": "35",
-            "gol_minus": "55",
-            "gol_razlika": "-20",
-            "bodovi": "13"
+            "nerijeseno": "2",
+            "porazi": "8",
+            "gol_plus": "19",
+            "gol_minus": "33",
+            "gol_razlika": "-14",
+            "bodovi": "14"
         },
         {
             "pozicija": "9",
-            "klub": "NK BSK Biškupci",
-            "utakmice": "13",
-            "pobjede": "3",
-            "nerijeseno": "2",
-            "porazi": "8",
-            "gol_plus": "16",
-            "gol_minus": "32",
-            "gol_razlika": "-16",
-            "bodovi": "11"
+            "klub": "NK Dinamo Badljevina",
+            "utakmice": "15",
+            "pobjede": "4",
+            "nerijeseno": "1",
+            "porazi": "10",
+            "gol_plus": "36",
+            "gol_minus": "57",
+            "gol_razlika": "-21",
+            "bodovi": "13"
         },
         {
             "pozicija": "10",
             "klub": "NK Slavonija Prekopakra",
-            "utakmice": "13",
+            "utakmice": "14",
             "pobjede": "2",
             "nerijeseno": "2",
-            "porazi": "9",
-            "gol_plus": "21",
-            "gol_minus": "52",
-            "gol_razlika": "-31",
+            "porazi": "10",
+            "gol_plus": "22",
+            "gol_minus": "57",
+            "gol_razlika": "-35",
             "bodovi": "8"
         },
         {
             "pozicija": "11",
             "klub": "NK Ovčare",
-            "utakmice": "14",
+            "utakmice": "15",
             "pobjede": "1",
-            "nerijeseno": "1",
+            "nerijeseno": "2",
             "porazi": "12",
-            "gol_plus": "16",
-            "gol_minus": "55",
+            "gol_plus": "17",
+            "gol_minus": "56",
             "gol_razlika": "-39",
-            "bodovi": "4"
+            "bodovi": "5"
         }
     ],
     "zadnji_rezultati": [
+        {
+            "datum": "12.04.2026.",
+            "vrijeme": "17:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Dinamo Badljevina",
+            "rezultat": "2:1",
+            "kolo": "2. ŽNL 25/26, 16. kolo"
+        },
         {
             "datum": "06.04.2026.",
             "vrijeme": "16:30",
@@ -250,14 +258,6 @@
     ],
     "raspored": [
         {
-            "datum": "12.04.2026.",
-            "vrijeme": "17:00",
-            "domacin": "NK Omladinac Čaglin",
-            "gost": "NK Dinamo Badljevina",
-            "rezultat": "-:-",
-            "kolo": "2. ŽNL 25/26, 16. kolo"
-        },
-        {
             "datum": "18.04.2026.",
             "vrijeme": "17:00",
             "domacin": "NK Slavonija Prekopakra",
@@ -318,7 +318,7 @@
             "golovi": 0
         },
         {
-            "broj": "16",
+            "broj": "12",
             "ime": "Željko Vidmar",
             "pozicija": "Vratar",
             "golovi": 0
@@ -348,7 +348,7 @@
             "golovi": 0
         },
         {
-            "broj": "4",
+            "broj": "16",
             "ime": "Ivan Blagojević",
             "pozicija": "Igrač",
             "golovi": 4
@@ -396,6 +396,12 @@
             "golovi": 0
         },
         {
+            "broj": "11",
+            "ime": "Neven Kralj",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
             "broj": "16",
             "ime": "Leon Krpan",
             "pozicija": "Igrač",
@@ -408,10 +414,10 @@
             "golovi": 0
         },
         {
-            "broj": "9",
+            "broj": "10",
             "ime": "Matej Kukić",
             "pozicija": "Igrač",
-            "golovi": 3
+            "golovi": 5
         },
         {
             "broj": "23",
@@ -420,13 +426,13 @@
             "golovi": 1
         },
         {
-            "broj": "3",
+            "broj": "4",
             "ime": "Nikola Majić",
             "pozicija": "Igrač",
             "golovi": 0
         },
         {
-            "broj": "53",
+            "broj": "18",
             "ime": "Željko Metlar",
             "pozicija": "Igrač",
             "golovi": 1
@@ -474,7 +480,7 @@
             "golovi": 0
         },
         {
-            "broj": "11",
+            "broj": "6",
             "ime": "Dominik Ribičić",
             "pozicija": "Igrač",
             "golovi": 0
