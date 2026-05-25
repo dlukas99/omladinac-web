@@ -1,29 +1,29 @@
 {
-    "zadnje_azurirano": "24.05.2026. 13:03",
+    "zadnje_azurirano": "25.05.2026. 02:38",
     "ljestvica": [
         {
             "pozicija": "1",
             "klub": "NK Parasan",
-            "utakmice": "19",
-            "pobjede": "16",
+            "utakmice": "20",
+            "pobjede": "17",
             "nerijeseno": "2",
             "porazi": "1",
-            "gol_plus": "62",
+            "gol_plus": "68",
             "gol_minus": "9",
-            "gol_razlika": "+53",
-            "bodovi": "50"
+            "gol_razlika": "+59",
+            "bodovi": "53"
         },
         {
             "pozicija": "2",
             "klub": "NK Eminovci",
-            "utakmice": "19",
-            "pobjede": "16",
+            "utakmice": "20",
+            "pobjede": "17",
             "nerijeseno": "1",
             "porazi": "2",
-            "gol_plus": "73",
+            "gol_plus": "79",
             "gol_minus": "18",
-            "gol_razlika": "+55",
-            "bodovi": "49"
+            "gol_razlika": "+61",
+            "bodovi": "52"
         },
         {
             "pozicija": "3",
@@ -39,18 +39,42 @@
         },
         {
             "pozicija": "4",
-            "klub": "NK Sulkovci",
-            "utakmice": "19",
+            "klub": "NK Graničar Bučje",
+            "utakmice": "20",
             "pobjede": "8",
-            "nerijeseno": "3",
+            "nerijeseno": "4",
             "porazi": "8",
-            "gol_plus": "43",
-            "gol_minus": "40",
-            "gol_razlika": "+3",
-            "bodovi": "27"
+            "gol_plus": "45",
+            "gol_minus": "44",
+            "gol_razlika": "+1",
+            "bodovi": "28"
         },
         {
             "pozicija": "5",
+            "klub": "NK Omladinac Čaglin",
+            "utakmice": "20",
+            "pobjede": "8",
+            "nerijeseno": "3",
+            "porazi": "9",
+            "gol_plus": "30",
+            "gol_minus": "30",
+            "gol_razlika": "0",
+            "bodovi": "27"
+        },
+        {
+            "pozicija": "6",
+            "klub": "NK Sulkovci",
+            "utakmice": "20",
+            "pobjede": "8",
+            "nerijeseno": "3",
+            "porazi": "9",
+            "gol_plus": "43",
+            "gol_minus": "46",
+            "gol_razlika": "-3",
+            "bodovi": "27"
+        },
+        {
+            "pozicija": "7",
             "klub": "NK Croatia Donja Obrijež",
             "utakmice": "20",
             "pobjede": "8",
@@ -62,39 +86,15 @@
             "bodovi": "27"
         },
         {
-            "pozicija": "6",
-            "klub": "NK Graničar Bučje",
-            "utakmice": "19",
-            "pobjede": "7",
-            "nerijeseno": "4",
-            "porazi": "8",
-            "gol_plus": "42",
-            "gol_minus": "43",
-            "gol_razlika": "-1",
-            "bodovi": "25"
-        },
-        {
-            "pozicija": "7",
-            "klub": "NK Omladinac Čaglin",
-            "utakmice": "19",
-            "pobjede": "7",
-            "nerijeseno": "3",
-            "porazi": "9",
-            "gol_plus": "28",
-            "gol_minus": "29",
-            "gol_razlika": "-1",
-            "bodovi": "24"
-        },
-        {
             "pozicija": "8",
             "klub": "NK BSK Biškupci",
-            "utakmice": "19",
+            "utakmice": "20",
             "pobjede": "6",
             "nerijeseno": "3",
-            "porazi": "10",
-            "gol_plus": "27",
-            "gol_minus": "47",
-            "gol_razlika": "-20",
+            "porazi": "11",
+            "gol_plus": "28",
+            "gol_minus": "49",
+            "gol_razlika": "-21",
             "bodovi": "21"
         },
         {
@@ -112,29 +112,37 @@
         {
             "pozicija": "10",
             "klub": "NK Slavonija Prekopakra",
-            "utakmice": "19",
+            "utakmice": "20",
             "pobjede": "3",
             "nerijeseno": "3",
-            "porazi": "13",
-            "gol_plus": "27",
-            "gol_minus": "66",
-            "gol_razlika": "-39",
+            "porazi": "14",
+            "gol_plus": "28",
+            "gol_minus": "69",
+            "gol_razlika": "-41",
             "bodovi": "12"
         },
         {
             "pozicija": "11",
             "klub": "NK Ovčare",
-            "utakmice": "19",
+            "utakmice": "20",
             "pobjede": "1",
             "nerijeseno": "2",
-            "porazi": "16",
+            "porazi": "17",
             "gol_plus": "20",
-            "gol_minus": "73",
-            "gol_razlika": "-53",
+            "gol_minus": "79",
+            "gol_razlika": "-59",
             "bodovi": "5"
         }
     ],
     "zadnji_rezultati": [
+        {
+            "datum": "24.05.2026.",
+            "vrijeme": "18:00",
+            "domacin": "NK BSK Biškupci",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "1:2",
+            "kolo": "2. ŽNL 25/26, 22. kolo"
+        },
         {
             "datum": "10.05.2026.",
             "vrijeme": "17:30",
@@ -288,16 +296,7 @@
             "kolo": "2. ŽNL 25/26, 1. kolo"
         }
     ],
-    "raspored": [
-        {
-            "datum": "24.05.2026.",
-            "vrijeme": "18:00",
-            "domacin": "NK BSK Biškupci",
-            "gost": "NK Omladinac Čaglin",
-            "rezultat": "-:-",
-            "kolo": "2. ŽNL 25/26, 22. kolo"
-        }
-    ],
+    "raspored": [],
     "igraci": [
         {
             "broj": "8",
