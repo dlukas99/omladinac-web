@@ -1,7 +1,213 @@
 {
-    "zadnje_azurirano": "24.08.2026. 12:29",
-    "ljestvica": [],
+    "zadnje_azurirano": "25.08.2026. 00:44",
+    "ljestvica": [
+        {
+            "pozicija": "1",
+            "klub": "NK Parasan",
+            "utakmice": "20",
+            "pobjede": "17",
+            "nerijeseno": "2",
+            "porazi": "1",
+            "gol_plus": "68",
+            "gol_minus": "9",
+            "gol_razlika": "+59",
+            "bodovi": "53"
+        },
+        {
+            "pozicija": "2",
+            "klub": "NK Eminovci",
+            "utakmice": "20",
+            "pobjede": "17",
+            "nerijeseno": "1",
+            "porazi": "2",
+            "gol_plus": "79",
+            "gol_minus": "18",
+            "gol_razlika": "+61",
+            "bodovi": "52"
+        },
+        {
+            "pozicija": "3",
+            "klub": "HNK Dobrovac Dobrovac",
+            "utakmice": "20",
+            "pobjede": "15",
+            "nerijeseno": "1",
+            "porazi": "4",
+            "gol_plus": "50",
+            "gol_minus": "21",
+            "gol_razlika": "+29",
+            "bodovi": "46"
+        },
+        {
+            "pozicija": "4",
+            "klub": "NK Graničar Bučje",
+            "utakmice": "20",
+            "pobjede": "8",
+            "nerijeseno": "4",
+            "porazi": "8",
+            "gol_plus": "45",
+            "gol_minus": "44",
+            "gol_razlika": "+1",
+            "bodovi": "28"
+        },
+        {
+            "pozicija": "5",
+            "klub": "NK Omladinac Čaglin",
+            "utakmice": "20",
+            "pobjede": "8",
+            "nerijeseno": "3",
+            "porazi": "9",
+            "gol_plus": "30",
+            "gol_minus": "30",
+            "gol_razlika": "0",
+            "bodovi": "27"
+        },
+        {
+            "pozicija": "6",
+            "klub": "NK Sulkovci",
+            "utakmice": "20",
+            "pobjede": "8",
+            "nerijeseno": "3",
+            "porazi": "9",
+            "gol_plus": "43",
+            "gol_minus": "46",
+            "gol_razlika": "-3",
+            "bodovi": "27"
+        },
+        {
+            "pozicija": "7",
+            "klub": "NK Croatia Donja Obrijež",
+            "utakmice": "20",
+            "pobjede": "8",
+            "nerijeseno": "3",
+            "porazi": "9",
+            "gol_plus": "44",
+            "gol_minus": "49",
+            "gol_razlika": "-5",
+            "bodovi": "27"
+        },
+        {
+            "pozicija": "8",
+            "klub": "NK BSK Biškupci",
+            "utakmice": "20",
+            "pobjede": "6",
+            "nerijeseno": "3",
+            "porazi": "11",
+            "gol_plus": "28",
+            "gol_minus": "49",
+            "gol_razlika": "-21",
+            "bodovi": "21"
+        },
+        {
+            "pozicija": "9",
+            "klub": "NK Dinamo Badljevina",
+            "utakmice": "20",
+            "pobjede": "6",
+            "nerijeseno": "1",
+            "porazi": "13",
+            "gol_plus": "53",
+            "gol_minus": "74",
+            "gol_razlika": "-21",
+            "bodovi": "19"
+        },
+        {
+            "pozicija": "10",
+            "klub": "NK Slavonija Prekopakra",
+            "utakmice": "20",
+            "pobjede": "3",
+            "nerijeseno": "3",
+            "porazi": "14",
+            "gol_plus": "28",
+            "gol_minus": "69",
+            "gol_razlika": "-41",
+            "bodovi": "12"
+        },
+        {
+            "pozicija": "11",
+            "klub": "NK Ovčare",
+            "utakmice": "20",
+            "pobjede": "1",
+            "nerijeseno": "2",
+            "porazi": "17",
+            "gol_plus": "20",
+            "gol_minus": "79",
+            "gol_razlika": "-59",
+            "bodovi": "5"
+        }
+    ],
     "zadnji_rezultati": [],
-    "raspored": [],
+    "raspored": [
+        {
+            "datum": "30.08.2026.",
+            "vrijeme": "17:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Croatia Donja Obrijež",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 26./27., 1. kolo"
+        },
+        {
+            "datum": "06.09.2026.",
+            "vrijeme": "17:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Slavonija Prekopakra",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 26./27., 2. kolo"
+        },
+        {
+            "datum": "13.09.2026.",
+            "vrijeme": "16:30",
+            "domacin": "NK Mladost Pavlovci",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 26./27., 3. kolo"
+        },
+        {
+            "datum": "20.09.2026.",
+            "vrijeme": "16:30",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Sulkovci",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 26./27., 4. kolo"
+        },
+        {
+            "datum": "27.09.2026.",
+            "vrijeme": "16:00",
+            "domacin": "NK Dinamo Badljevina",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 26./27., 5. kolo"
+        },
+        {
+            "datum": "04.10.2026.",
+            "vrijeme": "16:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "HNK Dobrovac Dobrovac",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 26./27., 6. kolo"
+        },
+        {
+            "datum": "11.10.2026.",
+            "vrijeme": "15:30",
+            "domacin": "NK Ovčare",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 26./27., 7. kolo"
+        },
+        {
+            "datum": "18.10.2026.",
+            "vrijeme": "15:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK BSK Biškupci",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 26./27., 8. kolo"
+        },
+        {
+            "datum": "25.10.2026.",
+            "vrijeme": "14:00",
+            "domacin": "NK Graničar Bučje",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 26./27., 9. kolo"
+        }
+    ],
     "igraci": []
 }
