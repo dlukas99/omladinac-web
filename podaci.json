@@ -1,5 +1,5 @@
 {
-    "zadnje_azurirano": "30.08.2026. 15:45",
+    "zadnje_azurirano": "31.08.2026. 02:33",
     "ljestvica": [
         {
             "pozicija": "1",
@@ -134,16 +134,17 @@
             "bodovi": "5"
         }
     ],
-    "zadnji_rezultati": [],
-    "raspored": [
+    "zadnji_rezultati": [
         {
             "datum": "30.08.2026.",
             "vrijeme": "17:00",
             "domacin": "NK Omladinac Čaglin",
             "gost": "NK Croatia Donja Obrijež",
-            "rezultat": "-:-",
+            "rezultat": "6:1",
             "kolo": "2. ŽNL 26./27., 1. kolo"
-        },
+        }
+    ],
+    "raspored": [
         {
             "datum": "06.09.2026.",
             "vrijeme": "17:00",
@@ -209,5 +210,114 @@
             "kolo": "2. ŽNL 26./27., 9. kolo"
         }
     ],
-    "igraci": []
+    "igraci": [
+        {
+            "broj": "1",
+            "ime": "Marko Jurić",
+            "pozicija": "Vratar",
+            "golovi": 0
+        },
+        {
+            "broj": "13",
+            "ime": "Ivan Abramović",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "5",
+            "ime": "Dalibor Bardač",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "16",
+            "ime": "Ivan Blagojević",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "4",
+            "ime": "Adriano Borevac",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "8",
+            "ime": "Igor Bošnjak",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "6",
+            "ime": "Domagoj Buturac",
+            "pozicija": "Igrač",
+            "golovi": 3
+        },
+        {
+            "broj": "3",
+            "ime": "David Đajić",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "14",
+            "ime": "Zlatko Đajić",
+            "pozicija": "Igrač",
+            "golovi": 2
+        },
+        {
+            "broj": "9",
+            "ime": "Dario Jančec",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "18",
+            "ime": "Leon Krpan",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "17",
+            "ime": "Mateo Krpan",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "2",
+            "ime": "Matej Kukić",
+            "pozicija": "Igrač",
+            "golovi": 1
+        },
+        {
+            "broj": "11",
+            "ime": "Dino Magić",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "15",
+            "ime": "Željko Metlar",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "7",
+            "ime": "Antonio Miličević",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "10",
+            "ime": "Ivica Pavić",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "12",
+            "ime": "Filip Stipić",
+            "pozicija": "Igrač",
+            "golovi": 0
+        }
+    ]
 }
