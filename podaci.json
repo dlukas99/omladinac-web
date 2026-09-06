@@ -1,5 +1,5 @@
 {
-    "zadnje_azurirano": "06.09.2026. 02:05",
+    "zadnje_azurirano": "06.09.2026. 14:40",
     "ljestvica": [
         {
             "pozicija": "1",
@@ -218,6 +218,12 @@
             "golovi": 0
         },
         {
+            "broj": "12",
+            "ime": "Filip Stipić",
+            "pozicija": "Vratar",
+            "golovi": 0
+        },
+        {
             "broj": "13",
             "ime": "Ivan Abramović",
             "pozicija": "Igrač",
@@ -232,6 +238,12 @@
         {
             "broj": "16",
             "ime": "Ivan Blagojević",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "17",
+            "ime": "Filip Bobinac",
             "pozicija": "Igrač",
             "golovi": 0
         },
@@ -278,7 +290,7 @@
             "golovi": 0
         },
         {
-            "broj": "17",
+            "broj": "19",
             "ime": "Mateo Krpan",
             "pozicija": "Igrač",
             "golovi": 0
@@ -297,6 +309,18 @@
         },
         {
             "broj": "15",
+            "ime": "Marin Magić",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "16",
+            "ime": "Nikola Majić",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "23",
             "ime": "Željko Metlar",
             "pozicija": "Igrač",
             "golovi": 0
@@ -310,12 +334,6 @@
         {
             "broj": "10",
             "ime": "Ivica Pavić",
-            "pozicija": "Igrač",
-            "golovi": 0
-        },
-        {
-            "broj": "12",
-            "ime": "Filip Stipić",
             "pozicija": "Igrač",
             "golovi": 0
         }
