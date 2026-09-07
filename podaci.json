@@ -1,5 +1,5 @@
 {
-    "zadnje_azurirano": "06.09.2026. 14:40",
+    "zadnje_azurirano": "07.09.2026. 02:02",
     "ljestvica": [
         {
             "pozicija": "1",
@@ -136,6 +136,14 @@
     ],
     "zadnji_rezultati": [
         {
+            "datum": "06.09.2026.",
+            "vrijeme": "17:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "NK Slavonija Prekopakra",
+            "rezultat": "1:1",
+            "kolo": "2. ŽNL 26./27., 2. kolo"
+        },
+        {
             "datum": "30.08.2026.",
             "vrijeme": "17:00",
             "domacin": "NK Omladinac Čaglin",
@@ -145,14 +153,6 @@
         }
     ],
     "raspored": [
-        {
-            "datum": "06.09.2026.",
-            "vrijeme": "17:00",
-            "domacin": "NK Omladinac Čaglin",
-            "gost": "NK Slavonija Prekopakra",
-            "rezultat": "-:-",
-            "kolo": "2. ŽNL 26./27., 2. kolo"
-        },
         {
             "datum": "13.09.2026.",
             "vrijeme": "16:30",
@@ -218,13 +218,19 @@
             "golovi": 0
         },
         {
-            "broj": "12",
+            "broj": "14",
             "ime": "Filip Stipić",
             "pozicija": "Vratar",
             "golovi": 0
         },
         {
-            "broj": "13",
+            "broj": "12",
+            "ime": "Željko Vidmar",
+            "pozicija": "Vratar",
+            "golovi": 0
+        },
+        {
+            "broj": "5",
             "ime": "Ivan Abramović",
             "pozicija": "Igrač",
             "golovi": 0
@@ -263,7 +269,7 @@
             "broj": "6",
             "ime": "Domagoj Buturac",
             "pozicija": "Igrač",
-            "golovi": 3
+            "golovi": 4
         },
         {
             "broj": "3",
@@ -272,7 +278,7 @@
             "golovi": 0
         },
         {
-            "broj": "14",
+            "broj": "23",
             "ime": "Zlatko Đajić",
             "pozicija": "Igrač",
             "golovi": 2
@@ -314,13 +320,13 @@
             "golovi": 0
         },
         {
-            "broj": "16",
+            "broj": "9",
             "ime": "Nikola Majić",
             "pozicija": "Igrač",
             "golovi": 0
         },
         {
-            "broj": "23",
+            "broj": "16",
             "ime": "Željko Metlar",
             "pozicija": "Igrač",
             "golovi": 0
