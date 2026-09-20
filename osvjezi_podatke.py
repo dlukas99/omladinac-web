@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 
 URL_CLUB = "https://semafor.hns.family/klubovi/660/nk-omladinac-caglin/"
-URL_COMPETITION = "https://semafor.hns.family/natjecanja/100677350/2-znl-2526/"
+URL_COMPETITION = "https://semafor.hns.family/natjecanja/114721765/2-znl-2627/"
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
 }
