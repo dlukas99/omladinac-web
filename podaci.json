@@ -1,5 +1,5 @@
 {
-    "zadnje_azurirano": "27.09.2026. 02:43",
+    "zadnje_azurirano": "27.09.2026. 16:05",
     "ljestvica": [
         {
             "pozicija": "1",
@@ -124,6 +124,14 @@
     ],
     "zadnji_rezultati": [
         {
+            "datum": "27.09.2026.",
+            "vrijeme": "16:00",
+            "domacin": "NK Dinamo Badljevina",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "-:-",
+            "kolo": "2. ŽNL 26./27., 5. kolo"
+        },
+        {
             "datum": "20.09.2026.",
             "vrijeme": "16:30",
             "domacin": "NK Omladinac Čaglin",
@@ -157,14 +165,6 @@
         }
     ],
     "raspored": [
-        {
-            "datum": "27.09.2026.",
-            "vrijeme": "16:00",
-            "domacin": "NK Dinamo Badljevina",
-            "gost": "NK Omladinac Čaglin",
-            "rezultat": "-:-",
-            "kolo": "2. ŽNL 26./27., 5. kolo"
-        },
         {
             "datum": "04.10.2026.",
             "vrijeme": "16:00",
@@ -212,7 +212,7 @@
             "golovi": 0
         },
         {
-            "broj": "18",
+            "broj": "12",
             "ime": "Željko Vidmar",
             "pozicija": "Vratar",
             "golovi": 0
