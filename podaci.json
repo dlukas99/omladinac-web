@@ -1,5 +1,5 @@
 {
-    "zadnje_azurirano": "26.09.2026. 02:42",
+    "zadnje_azurirano": "27.09.2026. 02:43",
     "ljestvica": [
         {
             "pozicija": "1",
@@ -200,19 +200,25 @@
     ],
     "igraci": [
         {
+            "broj": "12",
+            "ime": "Krešimir Dukmenić",
+            "pozicija": "Vratar",
+            "golovi": 0
+        },
+        {
             "broj": "1",
             "ime": "Marko Jurić",
             "pozicija": "Vratar",
             "golovi": 0
         },
         {
-            "broj": "12",
+            "broj": "18",
             "ime": "Željko Vidmar",
             "pozicija": "Vratar",
             "golovi": 0
         },
         {
-            "broj": "14",
+            "broj": "4",
             "ime": "Ivan Abramović",
             "pozicija": "Igrač",
             "golovi": 0
@@ -278,16 +284,22 @@
             "golovi": 0
         },
         {
-            "broj": "13",
+            "broj": "2",
             "ime": "Mateo Krpan",
             "pozicija": "Igrač",
             "golovi": 0
         },
         {
-            "broj": "2",
+            "broj": "11",
             "ime": "Matej Kukić",
             "pozicija": "Igrač",
             "golovi": 1
+        },
+        {
+            "broj": "23",
+            "ime": "Kristijan Lovrić",
+            "pozicija": "Igrač",
+            "golovi": 0
         },
         {
             "broj": "11",
