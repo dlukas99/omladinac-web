@@ -1,17 +1,17 @@
 {
-    "zadnje_azurirano": "04.10.2026. 03:32",
+    "zadnje_azurirano": "04.10.2026. 16:12",
     "ljestvica": [
         {
             "pozicija": "1",
             "klub": "HNK Dobrovac Dobrovac",
-            "utakmice": "4",
+            "utakmice": "5",
             "pobjede": "4",
-            "nerijeseno": "0",
+            "nerijeseno": "1",
             "porazi": "0",
             "gol_plus": "15",
             "gol_minus": "3",
             "gol_razlika": "+12",
-            "bodovi": "12"
+            "bodovi": "13"
         },
         {
             "pozicija": "2",
@@ -39,27 +39,27 @@
         },
         {
             "pozicija": "4",
-            "klub": "NK Croatia Donja Obrijež",
-            "utakmice": "4",
-            "pobjede": "3",
-            "nerijeseno": "0",
-            "porazi": "1",
-            "gol_plus": "9",
-            "gol_minus": "8",
-            "gol_razlika": "+1",
-            "bodovi": "9"
-        },
-        {
-            "pozicija": "5",
             "klub": "NK Omladinac Čaglin",
-            "utakmice": "5",
+            "utakmice": "6",
             "pobjede": "2",
-            "nerijeseno": "2",
+            "nerijeseno": "3",
             "porazi": "1",
             "gol_plus": "12",
             "gol_minus": "7",
             "gol_razlika": "+5",
-            "bodovi": "8"
+            "bodovi": "9"
+        },
+        {
+            "pozicija": "5",
+            "klub": "NK Croatia Donja Obrijež",
+            "utakmice": "5",
+            "pobjede": "3",
+            "nerijeseno": "0",
+            "porazi": "2",
+            "gol_plus": "10",
+            "gol_minus": "12",
+            "gol_razlika": "-2",
+            "bodovi": "9"
         },
         {
             "pozicija": "6",
@@ -76,17 +76,29 @@
         {
             "pozicija": "7",
             "klub": "NK Ovčare",
-            "utakmice": "5",
+            "utakmice": "6",
             "pobjede": "2",
-            "nerijeseno": "0",
+            "nerijeseno": "1",
             "porazi": "3",
-            "gol_plus": "12",
-            "gol_minus": "13",
+            "gol_plus": "13",
+            "gol_minus": "14",
             "gol_razlika": "-1",
-            "bodovi": "6"
+            "bodovi": "7"
         },
         {
             "pozicija": "8",
+            "klub": "NK BSK Biškupci",
+            "utakmice": "6",
+            "pobjede": "2",
+            "nerijeseno": "0",
+            "porazi": "4",
+            "gol_plus": "9",
+            "gol_minus": "13",
+            "gol_razlika": "-4",
+            "bodovi": "6"
+        },
+        {
+            "pozicija": "9",
             "klub": "NK Slavonija Prekopakra",
             "utakmice": "6",
             "pobjede": "1",
@@ -98,31 +110,27 @@
             "bodovi": "5"
         },
         {
-            "pozicija": "9",
-            "klub": "NK BSK Biškupci",
-            "utakmice": "5",
-            "pobjede": "1",
-            "nerijeseno": "0",
-            "porazi": "4",
-            "gol_plus": "5",
-            "gol_minus": "12",
-            "gol_razlika": "-7",
-            "bodovi": "3"
-        },
-        {
             "pozicija": "10",
             "klub": "NK Graničar Bučje",
-            "utakmice": "5",
+            "utakmice": "6",
             "pobjede": "0",
-            "nerijeseno": "0",
+            "nerijeseno": "1",
             "porazi": "5",
-            "gol_plus": "4",
-            "gol_minus": "26",
+            "gol_plus": "5",
+            "gol_minus": "27",
             "gol_razlika": "-22",
-            "bodovi": "0"
+            "bodovi": "1"
         }
     ],
     "zadnji_rezultati": [
+        {
+            "datum": "04.10.2026.",
+            "vrijeme": "16:00",
+            "domacin": "NK Omladinac Čaglin",
+            "gost": "HNK Dobrovac Dobrovac",
+            "rezultat": "0:0",
+            "kolo": "2. ŽNL 26./27., 6. kolo"
+        },
         {
             "datum": "27.09.2026.",
             "vrijeme": "16:00",
@@ -165,14 +173,6 @@
         }
     ],
     "raspored": [
-        {
-            "datum": "04.10.2026.",
-            "vrijeme": "16:00",
-            "domacin": "NK Omladinac Čaglin",
-            "gost": "HNK Dobrovac Dobrovac",
-            "rezultat": "-:-",
-            "kolo": "2. ŽNL 26./27., 6. kolo"
-        },
         {
             "datum": "11.10.2026.",
             "vrijeme": "15:30",
