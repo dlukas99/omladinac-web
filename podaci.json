@@ -1,5 +1,5 @@
 {
-    "zadnje_azurirano": "04.10.2026. 16:12",
+    "zadnje_azurirano": "05.10.2026. 03:12",
     "ljestvica": [
         {
             "pozicija": "1",
@@ -15,6 +15,18 @@
         },
         {
             "pozicija": "2",
+            "klub": "NK Sulkovci",
+            "utakmice": "6",
+            "pobjede": "4",
+            "nerijeseno": "1",
+            "porazi": "1",
+            "gol_plus": "17",
+            "gol_minus": "8",
+            "gol_razlika": "+9",
+            "bodovi": "13"
+        },
+        {
+            "pozicija": "3",
             "klub": "NK Dinamo Badljevina",
             "utakmice": "6",
             "pobjede": "4",
@@ -24,18 +36,6 @@
             "gol_minus": "6",
             "gol_razlika": "+4",
             "bodovi": "12"
-        },
-        {
-            "pozicija": "3",
-            "klub": "NK Sulkovci",
-            "utakmice": "5",
-            "pobjede": "3",
-            "nerijeseno": "1",
-            "porazi": "1",
-            "gol_plus": "15",
-            "gol_minus": "7",
-            "gol_razlika": "+8",
-            "bodovi": "10"
         },
         {
             "pozicija": "4",
@@ -64,13 +64,13 @@
         {
             "pozicija": "6",
             "klub": "NK Mladost Pavlovci",
-            "utakmice": "5",
+            "utakmice": "6",
             "pobjede": "2",
             "nerijeseno": "1",
-            "porazi": "2",
-            "gol_plus": "12",
-            "gol_minus": "7",
-            "gol_razlika": "+5",
+            "porazi": "3",
+            "gol_plus": "13",
+            "gol_minus": "9",
+            "gol_razlika": "+4",
             "bodovi": "7"
         },
         {
@@ -200,7 +200,7 @@
     ],
     "igraci": [
         {
-            "broj": "12",
+            "broj": "3",
             "ime": "Krešimir Dukmenić",
             "pozicija": "Vratar",
             "golovi": 0
@@ -248,7 +248,7 @@
             "golovi": 0
         },
         {
-            "broj": "8",
+            "broj": "14",
             "ime": "Igor Bošnjak",
             "pozicija": "Igrač",
             "golovi": 0
@@ -266,7 +266,7 @@
             "golovi": 0
         },
         {
-            "broj": "14",
+            "broj": "18",
             "ime": "Zlatko Đajić",
             "pozicija": "Igrač",
             "golovi": 2
@@ -284,13 +284,13 @@
             "golovi": 0
         },
         {
-            "broj": "2",
+            "broj": "13",
             "ime": "Mateo Krpan",
             "pozicija": "Igrač",
             "golovi": 0
         },
         {
-            "broj": "11",
+            "broj": "2",
             "ime": "Matej Kukić",
             "pozicija": "Igrač",
             "golovi": 1
@@ -326,7 +326,7 @@
             "golovi": 0
         },
         {
-            "broj": "18",
+            "broj": "16",
             "ime": "Željko Metlar",
             "pozicija": "Igrač",
             "golovi": 1
@@ -344,7 +344,13 @@
             "golovi": 0
         },
         {
-            "broj": "16",
+            "broj": "8",
+            "ime": "Mateo Rogalo",
+            "pozicija": "Igrač",
+            "golovi": 0
+        },
+        {
+            "broj": "15",
             "ime": "Filip Stipić",
             "pozicija": "Igrač",
             "golovi": 0
