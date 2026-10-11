@@ -1,128 +1,136 @@
 {
-    "zadnje_azurirano": "11.10.2026. 03:04",
+    "zadnje_azurirano": "11.10.2026. 17:05",
     "ljestvica": [
         {
             "pozicija": "1",
-            "klub": "HNK Dobrovac Dobrovac",
-            "utakmice": "5",
-            "pobjede": "4",
+            "klub": "NK Sulkovci",
+            "utakmice": "7",
+            "pobjede": "5",
             "nerijeseno": "1",
-            "porazi": "0",
-            "gol_plus": "15",
-            "gol_minus": "3",
+            "porazi": "1",
+            "gol_plus": "22",
+            "gol_minus": "10",
             "gol_razlika": "+12",
-            "bodovi": "13"
+            "bodovi": "16"
         },
         {
             "pozicija": "2",
-            "klub": "NK Sulkovci",
+            "klub": "HNK Dobrovac Dobrovac",
             "utakmice": "6",
             "pobjede": "4",
-            "nerijeseno": "1",
-            "porazi": "1",
+            "nerijeseno": "2",
+            "porazi": "0",
             "gol_plus": "17",
-            "gol_minus": "8",
-            "gol_razlika": "+9",
-            "bodovi": "13"
+            "gol_minus": "5",
+            "gol_razlika": "+12",
+            "bodovi": "14"
         },
         {
             "pozicija": "3",
             "klub": "NK Dinamo Badljevina",
-            "utakmice": "6",
+            "utakmice": "7",
             "pobjede": "4",
-            "nerijeseno": "0",
+            "nerijeseno": "1",
             "porazi": "2",
-            "gol_plus": "10",
-            "gol_minus": "6",
+            "gol_plus": "11",
+            "gol_minus": "7",
             "gol_razlika": "+4",
-            "bodovi": "12"
+            "bodovi": "13"
         },
         {
             "pozicija": "4",
             "klub": "NK Omladinac Čaglin",
-            "utakmice": "6",
-            "pobjede": "2",
+            "utakmice": "7",
+            "pobjede": "3",
             "nerijeseno": "3",
             "porazi": "1",
-            "gol_plus": "12",
+            "gol_plus": "13",
             "gol_minus": "7",
-            "gol_razlika": "+5",
-            "bodovi": "9"
+            "gol_razlika": "+6",
+            "bodovi": "12"
         },
         {
             "pozicija": "5",
-            "klub": "NK Croatia Donja Obrijež",
-            "utakmice": "5",
+            "klub": "NK BSK Biškupci",
+            "utakmice": "7",
             "pobjede": "3",
             "nerijeseno": "0",
-            "porazi": "2",
-            "gol_plus": "10",
-            "gol_minus": "12",
+            "porazi": "4",
+            "gol_plus": "12",
+            "gol_minus": "14",
             "gol_razlika": "-2",
             "bodovi": "9"
         },
         {
             "pozicija": "6",
-            "klub": "NK Mladost Pavlovci",
+            "klub": "NK Croatia Donja Obrijež",
             "utakmice": "6",
-            "pobjede": "2",
-            "nerijeseno": "1",
+            "pobjede": "3",
+            "nerijeseno": "0",
             "porazi": "3",
-            "gol_plus": "13",
-            "gol_minus": "9",
-            "gol_razlika": "+4",
-            "bodovi": "7"
+            "gol_plus": "12",
+            "gol_minus": "17",
+            "gol_razlika": "-5",
+            "bodovi": "9"
         },
         {
             "pozicija": "7",
-            "klub": "NK Ovčare",
-            "utakmice": "6",
+            "klub": "NK Mladost Pavlovci",
+            "utakmice": "7",
             "pobjede": "2",
-            "nerijeseno": "1",
+            "nerijeseno": "2",
             "porazi": "3",
-            "gol_plus": "13",
-            "gol_minus": "14",
-            "gol_razlika": "-1",
-            "bodovi": "7"
+            "gol_plus": "14",
+            "gol_minus": "10",
+            "gol_razlika": "+4",
+            "bodovi": "8"
         },
         {
             "pozicija": "8",
-            "klub": "NK BSK Biškupci",
-            "utakmice": "6",
+            "klub": "NK Ovčare",
+            "utakmice": "7",
             "pobjede": "2",
-            "nerijeseno": "0",
+            "nerijeseno": "1",
             "porazi": "4",
-            "gol_plus": "9",
-            "gol_minus": "13",
-            "gol_razlika": "-4",
-            "bodovi": "6"
+            "gol_plus": "13",
+            "gol_minus": "15",
+            "gol_razlika": "-2",
+            "bodovi": "7"
         },
         {
             "pozicija": "9",
             "klub": "NK Slavonija Prekopakra",
-            "utakmice": "6",
+            "utakmice": "7",
             "pobjede": "1",
-            "nerijeseno": "2",
+            "nerijeseno": "3",
             "porazi": "3",
-            "gol_plus": "4",
-            "gol_minus": "9",
+            "gol_plus": "6",
+            "gol_minus": "11",
             "gol_razlika": "-5",
-            "bodovi": "5"
+            "bodovi": "6"
         },
         {
             "pozicija": "10",
             "klub": "NK Graničar Bučje",
-            "utakmice": "6",
+            "utakmice": "7",
             "pobjede": "0",
             "nerijeseno": "1",
-            "porazi": "5",
-            "gol_plus": "5",
-            "gol_minus": "27",
-            "gol_razlika": "-22",
+            "porazi": "6",
+            "gol_plus": "6",
+            "gol_minus": "30",
+            "gol_razlika": "-24",
             "bodovi": "1"
         }
     ],
     "zadnji_rezultati": [
+        {
+            "datum": "11.10.2026.",
+            "vrijeme": "15:30",
+            "domacin": "NK Ovčare",
+            "gost": "NK Omladinac Čaglin",
+            "rezultat": "0:1",
+            "kolo": "2. ŽNL 26./27., 7. kolo"
+        },
         {
             "datum": "04.10.2026.",
             "vrijeme": "16:00",
@@ -173,14 +181,6 @@
         }
     ],
     "raspored": [
-        {
-            "datum": "11.10.2026.",
-            "vrijeme": "15:30",
-            "domacin": "NK Ovčare",
-            "gost": "NK Omladinac Čaglin",
-            "rezultat": "-:-",
-            "kolo": "2. ŽNL 26./27., 7. kolo"
-        },
         {
             "datum": "18.10.2026.",
             "vrijeme": "15:00",
