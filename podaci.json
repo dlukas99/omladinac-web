@@ -1,5 +1,5 @@
 {
-    "zadnje_azurirano": "17.10.2026. 02:17",
+    "zadnje_azurirano": "18.10.2026. 02:17",
     "ljestvica": [
         {
             "pozicija": "1",
@@ -88,26 +88,26 @@
         {
             "pozicija": "8",
             "klub": "NK Ovčare",
-            "utakmice": "7",
+            "utakmice": "8",
             "pobjede": "2",
-            "nerijeseno": "1",
+            "nerijeseno": "2",
             "porazi": "4",
-            "gol_plus": "13",
-            "gol_minus": "15",
+            "gol_plus": "14",
+            "gol_minus": "16",
             "gol_razlika": "-2",
-            "bodovi": "7"
+            "bodovi": "8"
         },
         {
             "pozicija": "9",
             "klub": "NK Slavonija Prekopakra",
-            "utakmice": "7",
+            "utakmice": "8",
             "pobjede": "1",
-            "nerijeseno": "3",
+            "nerijeseno": "4",
             "porazi": "3",
-            "gol_plus": "6",
-            "gol_minus": "11",
+            "gol_plus": "7",
+            "gol_minus": "12",
             "gol_razlika": "-5",
-            "bodovi": "6"
+            "bodovi": "7"
         },
         {
             "pozicija": "10",
@@ -266,7 +266,7 @@
             "golovi": 0
         },
         {
-            "broj": "14",
+            "broj": "18",
             "ime": "Zlatko Đajić",
             "pozicija": "Igrač",
             "golovi": 2
@@ -290,7 +290,7 @@
             "golovi": 0
         },
         {
-            "broj": "11",
+            "broj": "14",
             "ime": "Matej Kukić",
             "pozicija": "Igrač",
             "golovi": 1
@@ -344,13 +344,13 @@
             "golovi": 0
         },
         {
-            "broj": "8",
+            "broj": "11",
             "ime": "Mateo Rogalo",
             "pozicija": "Igrač",
             "golovi": 0
         },
         {
-            "broj": "13",
+            "broj": "16",
             "ime": "Filip Stipić",
             "pozicija": "Igrač",
             "golovi": 0
