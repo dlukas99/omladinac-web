@@ -1,5 +1,5 @@
 {
-    "zadnje_azurirano": "02.11.2026. 03:36",
+    "zadnje_azurirano": "02.11.2026. 21:08",
     "ljestvica": [
         {
             "pozicija": "1",
@@ -119,6 +119,126 @@
             "gol_plus": "8",
             "gol_minus": "41",
             "gol_razlika": "-33",
+            "bodovi": "1"
+        },
+        {
+            "pozicija": "1",
+            "klub": "HNK Dobrovac Dobrovac",
+            "utakmice": "4",
+            "pobjede": "3",
+            "nerijeseno": "1",
+            "porazi": "0",
+            "gol_plus": "16",
+            "gol_minus": "5",
+            "gol_razlika": "+11",
+            "bodovi": "10"
+        },
+        {
+            "pozicija": "2",
+            "klub": "NK Sulkovci",
+            "utakmice": "5",
+            "pobjede": "5",
+            "nerijeseno": "0",
+            "porazi": "0",
+            "gol_plus": "19",
+            "gol_minus": "5",
+            "gol_razlika": "+14",
+            "bodovi": "15"
+        },
+        {
+            "pozicija": "3",
+            "klub": "NK Omladinac Čaglin",
+            "utakmice": "5",
+            "pobjede": "2",
+            "nerijeseno": "3",
+            "porazi": "0",
+            "gol_plus": "12",
+            "gol_minus": "6",
+            "gol_razlika": "+6",
+            "bodovi": "9"
+        },
+        {
+            "pozicija": "4",
+            "klub": "NK Dinamo Badljevina",
+            "utakmice": "5",
+            "pobjede": "3",
+            "nerijeseno": "1",
+            "porazi": "1",
+            "gol_plus": "8",
+            "gol_minus": "5",
+            "gol_razlika": "+3",
+            "bodovi": "10"
+        },
+        {
+            "pozicija": "5",
+            "klub": "NK BSK Biškupci",
+            "utakmice": "4",
+            "pobjede": "3",
+            "nerijeseno": "0",
+            "porazi": "1",
+            "gol_plus": "12",
+            "gol_minus": "5",
+            "gol_razlika": "+7",
+            "bodovi": "9"
+        },
+        {
+            "pozicija": "6",
+            "klub": "NK Croatia Donja Obrijež",
+            "utakmice": "3",
+            "pobjede": "2",
+            "nerijeseno": "0",
+            "porazi": "1",
+            "gol_plus": "12",
+            "gol_minus": "7",
+            "gol_razlika": "+5",
+            "bodovi": "6"
+        },
+        {
+            "pozicija": "7",
+            "klub": "NK Ovčare",
+            "utakmice": "4",
+            "pobjede": "3",
+            "nerijeseno": "0",
+            "porazi": "1",
+            "gol_plus": "8",
+            "gol_minus": "4",
+            "gol_razlika": "+4",
+            "bodovi": "9"
+        },
+        {
+            "pozicija": "8",
+            "klub": "NK Mladost Pavlovci",
+            "utakmice": "5",
+            "pobjede": "1",
+            "nerijeseno": "0",
+            "porazi": "4",
+            "gol_plus": "7",
+            "gol_minus": "11",
+            "gol_razlika": "-4",
+            "bodovi": "3"
+        },
+        {
+            "pozicija": "9",
+            "klub": "NK Slavonija Prekopakra",
+            "utakmice": "5",
+            "pobjede": "1",
+            "nerijeseno": "2",
+            "porazi": "2",
+            "gol_plus": "4",
+            "gol_minus": "7",
+            "gol_razlika": "-3",
+            "bodovi": "5"
+        },
+        {
+            "pozicija": "10",
+            "klub": "NK Graničar Bučje",
+            "utakmice": "4",
+            "pobjede": "0",
+            "nerijeseno": "1",
+            "porazi": "3",
+            "gol_plus": "6",
+            "gol_minus": "15",
+            "gol_razlika": "-9",
             "bodovi": "1"
         }
     ],
