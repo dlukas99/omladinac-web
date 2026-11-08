@@ -1,17 +1,17 @@
 {
-    "zadnje_azurirano": "08.11.2026. 03:34",
+    "zadnje_azurirano": "08.11.2026. 17:25",
     "ljestvica": [
         {
             "pozicija": "1",
             "klub": "HNK Dobrovac Dobrovac",
-            "utakmice": "8",
-            "pobjede": "6",
+            "utakmice": "9",
+            "pobjede": "7",
             "nerijeseno": "2",
             "porazi": "0",
-            "gol_plus": "25",
-            "gol_minus": "8",
-            "gol_razlika": "+17",
-            "bodovi": "20"
+            "gol_plus": "30",
+            "gol_minus": "9",
+            "gol_razlika": "+21",
+            "bodovi": "23"
         },
         {
             "pozicija": "2",
@@ -64,13 +64,13 @@
         {
             "pozicija": "6",
             "klub": "NK Croatia Donja Obrijež",
-            "utakmice": "8",
+            "utakmice": "9",
             "pobjede": "4",
             "nerijeseno": "0",
-            "porazi": "4",
-            "gol_plus": "21",
-            "gol_minus": "21",
-            "gol_razlika": "0",
+            "porazi": "5",
+            "gol_plus": "22",
+            "gol_minus": "26",
+            "gol_razlika": "-4",
             "bodovi": "12"
         },
         {
@@ -184,13 +184,13 @@
         {
             "pozicija": "6",
             "klub": "NK Croatia Donja Obrijež",
-            "utakmice": "3",
+            "utakmice": "4",
             "pobjede": "2",
             "nerijeseno": "0",
-            "porazi": "1",
-            "gol_plus": "12",
-            "gol_minus": "7",
-            "gol_razlika": "+5",
+            "porazi": "2",
+            "gol_plus": "13",
+            "gol_minus": "12",
+            "gol_razlika": "+1",
             "bodovi": "6"
         },
         {
